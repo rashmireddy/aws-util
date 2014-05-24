@@ -23,6 +23,14 @@ launch_instances.pl
 ===================
 This script takes 2 params, num of instances to launch and a config file with aws access key, secret key, security group, ami image type etc
 
+```
+$ ./launch_instance.pl 2 aws.conf
+Creating 2 instances of RHEL-6.5_GA-x86_64-7-Hourly2 ...
+i-4be56418: [running] ec2-54-227-32-176.compute-1.amazonaws.com
+i-77e56424: [running] ec2-54-211-95-78.compute-1.amazonaws.com
+$ 
+```
+
 Example aws.conf
 
 ```
