@@ -19,7 +19,7 @@ sudo cpanm VM::EC2
 sudo cpanm Config::Tiny
 ```
 
-launch_instances.pl
+launch_instance.pl
 ===================
 This script takes 2 params, num of instances to launch and a config file with aws access key, secret key, security group, ami image type etc
 
@@ -42,6 +42,41 @@ image=ami-8d756fe4
 instance_type=t1.micro
 security_group=<YOUR_SECURITY_GROUP_HERE>
 key_name=<YOUR_KEY_PAIR_NAME_HERE>
+
 ```
+
+install_s3fs.pl
+================
+This script takes 1 param, a text file with list of hostnames on which s3fs should be installed. The script scp install_s3fs.sh file to the remote host which does the installation.
+
+```
+$./install_s3fs.pl hosts.txt
+```
+
+s3_bucket.pl
+============
+This script takes 1 param, a config file and creates a s3 bucket if it does not exists. If the s3 bucket exists then it clears the keys in the bucket.
+
+```
+$ ./s3_bucket.pl aws.conf
+Adding bucket : AKIAIT3cvxcvx6UKYI6ZSZAMDQ-rashmireddy-awsutil-s3-01
+$ ./s3_bucket.pl aws.conf
+Keys cleared for bucket : AKIAIvkgvrtuI6ZSZAMDQ-rashmireddy-awsutil-s3-01
+```
+Example aws.conf
+
+```
+[aws]
+access_key=<YOUR_ACCESS_KEY_HERE>
+secret_key=<YOUR_SECRET_KEY_HERE>
+endpoint=http://ec2.amazonaws.com
+image=ami-8d756fe4
+instance_type=t1.micro
+security_group=<YOUR_SECURITY_GROUP_HERE>
+key_name=<YOUR_KEY_PAIR_NAME_HERE>
+[s3]
+bucket_name=rashmireddy-awsutil-s3-01
+```
+
 
 
