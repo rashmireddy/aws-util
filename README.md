@@ -17,19 +17,13 @@ The following perl modules are required
 ```
 sudo cpanm VM::EC2
 sudo cpanm Config::Tiny
+sudo cpanm Amazon::S3
 ```
 
-launch_instance.pl
-===================
-This script takes 2 params, num of instances to launch and a config file with aws access key, secret key, security group, ami image type etc
+AWS config
+===========
 
-```
-$ ./launch_instance.pl 2 aws.conf
-Creating 2 instances of RHEL-6.5_GA-x86_64-7-Hourly2 ...
-i-4be56418: [running] ec2-54-227-32-176.compute-1.amazonaws.com
-i-77e56424: [running] ec2-54-211-95-78.compute-1.amazonaws.com
-$ 
-```
+All scripts take aws.conf, which has aws access key, secret key, security group, ami image type etc
 
 Example aws.conf
 
@@ -42,15 +36,36 @@ image=ami-8d756fe4
 instance_type=t1.micro
 security_group=<YOUR_SECURITY_GROUP_HERE>
 key_name=<YOUR_KEY_PAIR_NAME_HERE>
+# launch_instance.pl will write the new instance hostnames to this file.
+host_file=hosts.txt
+instance_count=2
+region=us-west-1
+
+[s3]
+bucket_name=rashmireddy-awsutil-s3-01
+```
+
+
+launch_instance.pl
+===================
+This script takes 1 param, a config file 
 
 ```
+$ ./launch_instance.pl aws.conf
+Creating 2 instances of RHEL-6.5_GA-x86_64-7-Hourly2 ...
+i-4be56418: [running] ec2-54-227-32-176.compute-1.amazonaws.com
+i-77e56424: [running] ec2-54-211-95-78.compute-1.amazonaws.com
+$ 
+```
+
 
 install_s3fs.pl
 ================
-This script takes 1 param, a text file with list of hostnames on which s3fs should be installed. The script scp install_s3fs.sh file to the remote host which does the installation.
+This script takes 1 param, a aws.conf file which tells the name of the text file with list of hostnames on which s3fs should be installed. The script will scp install_s3fs.sh file to the remote host which does the installation.
 
 ```
-$./install_s3fs.pl hosts.txt
+$ ./install_s3fs.pl aws.conf
+
 ```
 
 s3_bucket.pl
@@ -63,20 +78,18 @@ Adding bucket : AKIAIT3cvxcvx6UKYI6ZSZAMDQ-rashmireddy-awsutil-s3-01
 $ ./s3_bucket.pl aws.conf
 Keys cleared for bucket : AKIAIvkgvrtuI6ZSZAMDQ-rashmireddy-awsutil-s3-01
 ```
-Example aws.conf
+
+
+mount_s3fs.pl
+=============
+This script takes 1 param, a config file and mounts s3 bucket on the ec2 instances. If the dir is already mounted it just ignores.
 
 ```
-[aws]
-access_key=<YOUR_ACCESS_KEY_HERE>
-secret_key=<YOUR_SECRET_KEY_HERE>
-endpoint=http://ec2.amazonaws.com
-image=ami-8d756fe4
-instance_type=t1.micro
-security_group=<YOUR_SECURITY_GROUP_HERE>
-key_name=<YOUR_KEY_PAIR_NAME_HERE>
-[s3]
-bucket_name=rashmireddy-awsutil-s3-01
+$ ./mount_s3fs.pl aws.conf
+....
+....
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-65-181.us-west-1.compute.amazonaws.com
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-68-80.us-west-1.compute.amazonaws.com
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-70-227.us-west-1.compute.amazonaws.com
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-65-195.us-west-1.compute.amazonaws.com
 ```
-
-
-

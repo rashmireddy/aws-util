@@ -16,7 +16,7 @@ if(-e $config_file) {
         $config = Config::Tiny->read($config_file);
 }
 
-my $num_clients = $config->{'aws'}->{'no_instances'};
+my $num_clients = $config->{'aws'}->{'instance_count'};
 
 my @instances = create_instance($num_clients);
 
