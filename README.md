@@ -48,7 +48,7 @@ bucket_name=rashmireddy-awsutil-s3-01
 
 launch_instance.pl
 ===================
-This script takes 1 param, a config file 
+This script takes 1 param, a config file and creates a text file continaing a list of all the hostnames which are created successfully through EC2.
 
 ```
 $ ./launch_instance.pl aws.conf
@@ -92,4 +92,46 @@ SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-65-181.us-
 SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-68-80.us-west-1.compute.amazonaws.com
 SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-70-227.us-west-1.compute.amazonaws.com
 SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-65-195.us-west-1.compute.amazonaws.com
+```
+
+Issues
+------
+After running mount_s3fs.pl , the bucket is successfully mounted but we are not able to cd OR ls on that mount point.
+e.g: 
+
+```
+Rashmi:aws-util rashmi$ ssh ubuntu@ec2-54-183-68-80.us-west-1.compute.amazonaws.com
+Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue May 27 20:39:29 UTC 2014
+
+  System load:  0.0               Processes:           65
+  Usage of /:   14.6% of 7.75GB   Users logged in:     0
+  Memory usage: 14%               IP address for eth0: 172.31.9.55
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+
+Last login: Tue May 27 20:39:29 2014 from c-98-207-178-94.hsd1.ca.comcast.net
+ubuntu@ip-172-31-9-55:~$ sudo s3fs -o url=http://s3.amazonaws.com rashmireddy-awsutil-s3-01 /mnt/rashmireddy-awsutil-s3-01
+ubuntu@ip-172-31-9-55:~$ cd /m
+media/ mnt/   
+ubuntu@ip-172-31-9-55:~$ cd /m
+media/ mnt/   
+ubuntu@ip-172-31-9-55:~$ cd /mnt/
+ubuntu@ip-172-31-9-55:/mnt$ ls
+ls: cannot access rashmireddy-awsutil-s3-01: Permission denied
+rashmireddy-awsutil-s3-01
+ubuntu@ip-172-31-9-55:/mnt$ chmod 755 rashmireddy-awsutil-s3-01 
+chmod: cannot access ‘rashmireddy-awsutil-s3-01’: Permission denied
+ubuntu@ip-172-31-9-55:/mnt$ sudo chmod 755 rashmireddy-awsutil-s3-01 
+chmod: cannot access ‘rashmireddy-awsutil-s3-01’: Transport endpoint is not connected
+ubuntu@ip-172-31-9-55:/mnt$ 
 ```
