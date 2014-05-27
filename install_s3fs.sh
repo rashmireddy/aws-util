@@ -19,7 +19,6 @@ mv download fuse-2.8.6.tar.gz
 tar -xvzf fuse-2.8.6.tar.gz 
 cd fuse-2.8.6
 ./configure --prefix=/usr
-sudo apt-get install make
 make
 sudo make install
 
