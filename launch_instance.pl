@@ -6,8 +6,8 @@ use Data::Dumper;
 use VM::EC2;
 use Config::Tiny;
 
-my $num_clients = $ARGV[0];
-my $config_file = $ARGV[1];
+
+my $config_file = $ARGV[0];
 
 my $config = undef;
 
@@ -16,14 +16,22 @@ if(-e $config_file) {
         $config = Config::Tiny->read($config_file);
 }
 
+my $num_clients = $config->{'aws'}->{'no_instances'};
+
 my @instances = create_instance($num_clients);
 
+if(scalar(@instances) > 0 ) {
+    open(FH,">" . $config->{'aws'}->{'host_file'}) or die "cannot create file";
+}
+
 # print out instance's current state and DNS name
+# Also write the host names to a file
 for my $i (@instances) {
     my $status = $i->current_status;
     my $dns    = $i->dnsName;
     #system("ssh ec2-user\@$dns 'date'");
     print "$i: [$status] $dns\n";
+    print FH "$dns\n";
 }
 
  sub create_instance {
@@ -31,19 +39,24 @@ for my $i (@instances) {
  
     my $ec2 = VM::EC2->new(-access_key => $config->{'aws'}->{'access_key'},
                             -secret_key => $config->{'aws'}->{'secret_key'},
-                            -endpoint   => $config->{'aws'}->{'endpoint'});
-
+                            -endpoint   => $config->{'aws'}->{'endpoint'},
+                            -raise_error => "true",
+                            -print_error => "true",
+                            -region => $config->{'aws'}->{'region'});
+    print Dumper($ec2);
     # fetch an image by its ID 
-    # We will use RHEL 6.5 64 bit image - ami-8d756fe4
+    # We will use Ubuntu Server 14.04 LTS (PV) 64 bit image - ami-ee4f77ab
     my $image = $ec2->describe_images($config->{'aws'}->{'image'});
 
-
-    print "Creating " . $num_clients . " instances of " . $image->name  . " ...\n";
+    #print Dumper($image);
+    #print "Creating " . $num_clients . " instances of " . $image->name  . " ...\n";
     # run instances
-    my @instances = $image->run_instances(-key_name       => $config->{'aws'}->{'key_name'},
+    my @instances = $image->run_instances(
+                                          -key_name       => $config->{'aws'}->{'key_name'},
                                           -security_group => $config->{'aws'}->{'security_group'},
                                           -min_count      => $num_clients,
-                                          -instance_type  => $config->{'aws'}->{'instance_type'})
+                                          -instance_type  => $config->{'aws'}->{'instance_type'}
+                                        )
             or die $ec2->error_str;
 
     # wait for instances to reach "running" or other terminal state
