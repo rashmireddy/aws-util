@@ -43,6 +43,10 @@ region=us-west-1
 
 [s3]
 bucket_name=rashmireddy-awsutil-s3-01
+
+[data]
+files=data/4kb.txt,data/4kb.bin
+ops=ops.pl
 ```
 
 
