@@ -49,6 +49,14 @@ files=data/4kb.txt,data/4kb.bin
 ops=ops.pl
 ```
 
+run.sh
+======
+This is a driver script to run all individual scripts, It takes 1 param, a config file
+
+```
+$ ./run.sh aws.conf
+```
+
 
 launch_instance.pl
 ===================
