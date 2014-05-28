@@ -94,8 +94,26 @@ SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-70-227.us-
 SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-65-195.us-west-1.compute.amazonaws.com
 ```
 
-Issues
-------
+s3fs_ops.pl
+===========
+This script takes 1 param, a config file and generates report for io operations
+
+```
+$ ./s3fs_ops.pl aws.conf
+Rashmi:aws-util rashmi$ ./s3fs_ops.pl config/aws.conf 
+Generating report, please wait...
+For host : ec2-54-183-65-181.us-west-1.compute.amazonaws.com
+For host : ec2-54-183-65-195.us-west-1.compute.amazonaws.com
+For host : ec2-54-183-68-80.us-west-1.compute.amazonaws.com
+For host : ec2-54-183-70-227.us-west-1.compute.amazonaws.com
+```
+
+Note : The IO operations data will be in the present working dir in hostname.log file
+
+
+Issues encountered
+==================
+
 After running mount_s3fs.pl , the bucket is successfully mounted but we are not able to cd OR ls on that mount point.
 e.g: 
 
