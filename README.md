@@ -98,6 +98,15 @@ mount_s3fs.pl
 =============
 This script takes 1 param, a config file and mounts s3 bucket on the ec2 instances. If the dir is already mounted it just ignores.
 
+NOTE : please create a file .passwd-s3fs with contents aws_accesskey:aws_secretkey in the current working dir
+
+```
+$ cat .passwd-s3fs
+SFSDFFDAGFDSGDFSGDSFG:SDFAG#%YEDHGFHFDUTR&UGhJGHJHjGH
+$ 
+```
+
+
 ```
 $ ./mount_s3fs.pl aws.conf
 ....
