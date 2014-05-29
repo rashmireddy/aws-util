@@ -1,0 +1,1857 @@
+Wed May 28 22:49:35 PDT 2014
+1.running launch_instance.pl......
+i-caef1294: [running] ec2-54-183-70-242.us-west-1.compute.amazonaws.com
+i-c9ef1297: [running] ec2-54-183-84-101.us-west-1.compute.amazonaws.com
+Wed May 28 22:49:57 PDT 2014
+2.sleeping for 3 mins.......
+Wed May 28 22:49:57 PDT 2014
+Wed May 28 22:52:57 PDT 2014
+3.running install_s3fs.pl.....
+ PPA for the free exFAT file system implementation project: http://code.google.com/p/exfat/
+ More info: https://launchpad.net/~relan/+archive/exfat
+OK
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty InRelease
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates InRelease
+Get:1 http://us-west-1.ec2.archive.ubuntu.com trusty Release.gpg [933 B]
+Get:2 http://us-west-1.ec2.archive.ubuntu.com trusty-updates Release.gpg [933 B]
+Get:3 http://us-west-1.ec2.archive.ubuntu.com trusty Release [58.5 kB]
+Get:4 http://us-west-1.ec2.archive.ubuntu.com trusty-updates Release [58.5 kB]
+Get:5 http://us-west-1.ec2.archive.ubuntu.com trusty/main Sources [1,064 kB]
+Ign http://security.ubuntu.com trusty-security InRelease
+Get:6 http://security.ubuntu.com trusty-security Release.gpg [933 B]
+Get:7 http://us-west-1.ec2.archive.ubuntu.com trusty/universe Sources [6,399 kB]
+Get:8 http://security.ubuntu.com trusty-security Release [58.5 kB]
+Ign http://ppa.launchpad.net trusty InRelease
+Get:9 http://ppa.launchpad.net trusty Release.gpg [316 B]
+Get:10 http://security.ubuntu.com trusty-security/main Sources [16.0 kB]
+Get:11 http://ppa.launchpad.net trusty Release [14.0 kB]
+Get:12 http://security.ubuntu.com trusty-security/universe Sources [4,212 B]
+Get:13 http://us-west-1.ec2.archive.ubuntu.com trusty/main amd64 Packages [1,350 kB]
+Get:14 http://ppa.launchpad.net trusty/main amd64 Packages [762 B]
+Get:15 http://us-west-1.ec2.archive.ubuntu.com trusty/universe amd64 Packages [5,859 kB]
+Get:16 http://security.ubuntu.com trusty-security/main amd64 Packages [51.8 kB]
+Get:17 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Sources [45.7 kB]
+Get:18 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Sources [28.2 kB]
+Get:19 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages [109 kB]
+Get:20 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages [74.9 kB]
+Get:21 http://security.ubuntu.com trusty-security/universe amd64 Packages [17.9 kB]
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/main Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/main Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/universe Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/universe Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Translation-en
+Get:22 http://security.ubuntu.com trusty-security/main Translation-en [24.4 kB]
+Ign http://ppa.launchpad.net trusty/main Translation-en_US
+Ign http://ppa.launchpad.net trusty/main Translation-en
+Get:23 http://security.ubuntu.com trusty-security/universe Translation-en [9,065 B]
+Ign http://security.ubuntu.com trusty-security/main Translation-en_US
+Ign http://security.ubuntu.com trusty-security/universe Translation-en_US
+Fetched 15.2 MB in 8s (1,866 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mime-support is already the newest version.
+The following extra packages will be installed:
+  binutils comerr-dev cpp cpp-4.8 dpkg-dev exfat-fuse fakeroot g++ g++-4.8 gcc
+  gcc-4.8 krb5-multidev libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan0 libatomic1 libc-dev-bin libc6-dev
+  libcloog-isl4 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-4.8-dev
+  libgcrypt11-dev libgmp10 libgnutls-dev libgnutlsxx27 libgomp1
+  libgpg-error-dev libgssrpc4 libidn11-dev libisl10 libitm1 libkadm5clnt-mit9
+  libkadm5srv-mit9 libkdb5-7 libkrb5-dev libldap2-dev libmpc3 libmpfr4
+  libp11-kit-dev libpcre3-dev libpcrecpp0 libquadmath0 librtmp-dev libselinux1
+  libselinux1-dev libsepol1-dev libssl-dev libssl-doc libssl1.0.0
+  libstdc++-4.8-dev libtasn1-6-dev libtsan0 libxml2 linux-libc-dev make
+  manpages-dev pkg-config zlib1g-dev
+Suggested packages:
+  binutils-doc doc-base cpp-doc gcc-4.8-locales debian-keyring g++-multilib
+  g++-4.8-multilib gcc-4.8-doc libstdc++6-4.8-dbg gcc-multilib autoconf
+  automake1.9 libtool flex bison gdb gcc-doc gcc-4.8-multilib libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg
+  libbacktrace1-dbg libquadmath0-dbg binutils-gold krb5-doc glibc-doc
+  libcurl4-doc libcurl3-dbg libgcrypt11-doc gnutls26-doc gnutls-bin krb5-user
+  libstdc++-4.8-doc make-doc
+The following NEW packages will be installed:
+  binutils build-essential comerr-dev cpp cpp-4.8 dpkg-dev exfat-fuse
+  exfat-utils fakeroot g++ g++-4.8 gcc gcc-4.8 krb5-multidev
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan0 libatomic1 libc-dev-bin libc6-dev libcloog-isl4
+  libcurl4-openssl-dev libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libfuse-dev libgcc-4.8-dev libgcrypt11-dev libgmp10 libgnutls-dev
+  libgnutlsxx27 libgomp1 libgpg-error-dev libgssrpc4 libidn11-dev libisl10
+  libitm1 libkadm5clnt-mit9 libkadm5srv-mit9 libkdb5-7 libkrb5-dev
+  libldap2-dev libmpc3 libmpfr4 libp11-kit-dev libpcre3-dev libpcrecpp0
+  libquadmath0 librtmp-dev libselinux1-dev libsepol1-dev libssl-dev libssl-doc
+  libstdc++-4.8-dev libtasn1-6-dev libtsan0 libxml2-dev linux-libc-dev make
+  manpages-dev pkg-config zlib1g-dev
+The following packages will be upgraded:
+  libselinux1 libssl1.0.0 libxml2
+3 upgraded, 63 newly installed, 0 to remove and 43 not upgraded.
+Need to get 36.1 MB of archives.
+After this operation, 130 MB of additional disk space will be used.
+Get:1 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libselinux1 amd64 2.2.2-1ubuntu0.1 [58.7 kB]
+Get:2 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl1.0.0 amd64 1.0.1f-1ubuntu2.1 [822 kB]
+Get:3 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2 amd64 2.9.1+dfsg1-3ubuntu4.1 [570 kB]
+Get:4 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libasan0 amd64 4.8.2-19ubuntu1 [63.0 kB]
+Get:5 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libatomic1 amd64 4.8.2-19ubuntu1 [8,626 B]
+Get:6 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB]
+Get:7 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libisl10 amd64 0.12.2-1 [419 kB]
+Get:8 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libcloog-isl4 amd64 0.18.2-1 [57.5 kB]
+Get:9 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgomp1 amd64 4.8.2-19ubuntu1 [23.2 kB]
+Get:10 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgssrpc4 amd64 1.12+dfsg-2ubuntu4 [53.1 kB]
+Get:11 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libitm1 amd64 4.8.2-19ubuntu1 [28.5 kB]
+Get:12 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkadm5clnt-mit9 amd64 1.12+dfsg-2ubuntu4 [36.1 kB]
+Get:13 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkdb5-7 amd64 1.12+dfsg-2ubuntu4 [36.2 kB]
+Get:14 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkadm5srv-mit9 amd64 1.12+dfsg-2ubuntu4 [50.2 kB]
+Get:15 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libmpfr4 amd64 3.1.2-1 [203 kB]
+Get:16 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libpcrecpp0 amd64 1:8.31-2ubuntu2 [14.5 kB]
+Get:17 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libquadmath0 amd64 4.8.2-19ubuntu1 [126 kB]
+Get:18 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libtsan0 amd64 4.8.2-19ubuntu1 [94.7 kB]
+Get:19 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgnutlsxx27 amd64 2.12.23-12ubuntu2 [17.3 kB]
+Get:20 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libmpc3 amd64 1.0.1-1ubuntu1 [38.4 kB]
+Get:21 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main binutils amd64 2.24-5ubuntu3 [2,071 kB]
+Get:22 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libc-dev-bin amd64 2.19-0ubuntu6 [69.0 kB]
+Get:23 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main linux-libc-dev amd64 3.13.0-27.50 [780 kB]
+Get:24 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libc6-dev amd64 2.19-0ubuntu6 [1,911 kB]
+Get:25 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main cpp-4.8 amd64 4.8.2-19ubuntu1 [4,439 kB]
+Get:26 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main cpp amd64 4:4.8.2-1ubuntu6 [27.5 kB]
+Get:27 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgcc-4.8-dev amd64 4.8.2-19ubuntu1 [1,688 kB]
+Get:28 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main gcc-4.8 amd64 4.8.2-19ubuntu1 [5,012 kB]
+Get:29 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main gcc amd64 4:4.8.2-1ubuntu6 [5,098 B]
+Get:30 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libstdc++-4.8-dev amd64 4.8.2-19ubuntu1 [1,050 kB]
+Get:31 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main g++-4.8 amd64 4.8.2-19ubuntu1 [7,038 kB]
+Get:32 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main g++ amd64 4:4.8.2-1ubuntu6 [1,490 B]
+Get:33 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main make amd64 3.81-8.2ubuntu3 [119 kB]
+Get:34 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libdpkg-perl all 1.17.5ubuntu5.2 [179 kB]
+Get:35 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main dpkg-dev all 1.17.5ubuntu5.2 [726 kB]
+Get:36 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main build-essential amd64 11.6ubuntu6 [4,838 B]
+Get:37 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/universe exfat-fuse amd64 1.0.1-1 [26.0 kB]
+Get:38 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/universe exfat-utils amd64 1.0.1-1 [85.7 kB]
+Get:39 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfakeroot amd64 1.20-3ubuntu2 [25.4 kB]
+Get:40 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main fakeroot amd64 1.20-3ubuntu2 [55.0 kB]
+Get:41 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main comerr-dev amd64 2.1-1.42.9-3ubuntu1 [38.3 kB]
+Get:42 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main krb5-multidev amd64 1.12+dfsg-2ubuntu4 [111 kB]
+Get:43 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-perl all 1.19.02-3 [50.0 kB]
+Get:44 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-xs-perl amd64 0.04-2build4 [12.6 kB]
+Get:45 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
+Get:46 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main pkg-config amd64 0.26-1ubuntu4 [40.9 kB]
+Get:47 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libidn11-dev amd64 1.28-1ubuntu2 [517 kB]
+Get:48 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkrb5-dev amd64 1.12+dfsg-2ubuntu4 [14.4 kB]
+Get:49 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libldap2-dev amd64 2.4.31-1+nmu2ubuntu8 [259 kB]
+Get:50 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgpg-error-dev amd64 1.12-0.2ubuntu1 [20.1 kB]
+Get:51 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgcrypt11-dev amd64 1.5.3-2ubuntu4 [273 kB]
+Get:52 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main zlib1g-dev amd64 1:1.2.8.dfsg-1ubuntu1 [183 kB]
+Get:53 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libtasn1-6-dev amd64 3.4-3 [383 kB]
+Get:54 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libp11-kit-dev amd64 0.20.2-2ubuntu2 [56.4 kB]
+Get:55 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgnutls-dev amd64 2.12.23-12ubuntu2 [371 kB]
+Get:56 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main librtmp-dev amd64 2.4+20121230.gitdf6c518-1 [67.1 kB]
+Get:57 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl-dev amd64 1.0.1f-1ubuntu2.1 [1,070 kB]
+Get:58 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libcurl4-openssl-dev amd64 7.35.0-1ubuntu2 [243 kB]
+Get:59 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfile-fcntllock-perl amd64 0.14-2build1 [15.9 kB]
+Get:60 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libsepol1-dev amd64 2.2-1 [192 kB]
+Get:61 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libpcre3-dev amd64 1:8.31-2ubuntu2 [237 kB]
+Get:62 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libselinux1-dev amd64 2.2.2-1ubuntu0.1 [124 kB]
+Get:63 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfuse-dev amd64 2.9.2-4ubuntu4 [103 kB]
+Get:64 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl-doc all 1.0.1f-1ubuntu2.1 [965 kB]
+Get:65 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2-dev amd64 2.9.1+dfsg1-3ubuntu4.1 [628 kB]
+Get:66 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main manpages-dev all 3.54-1ubuntu1 [1,820 kB]
+Fetched 36.1 MB in 4s (7,938 kB/s)
+(Reading database ... 51050 files and directories currently installed.)
+Preparing to unpack .../libselinux1_2.2.2-1ubuntu0.1_amd64.deb ...
+Unpacking libselinux1:amd64 (2.2.2-1ubuntu0.1) over (2.2.2-1) ...
+Setting up libselinux1:amd64 (2.2.2-1ubuntu0.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+(Reading database ... 51050 files and directories currently installed.)
+Preparing to unpack .../libssl1.0.0_1.0.1f-1ubuntu2.1_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1f-1ubuntu2.1) over (1.0.1f-1ubuntu2) ...
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3ubuntu4.1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.1) over (2.9.1+dfsg1-3ubuntu4) ...
+Selecting previously unselected package libasan0:amd64.
+Preparing to unpack .../libasan0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libasan0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libatomic1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgmp10:amd64.
+Preparing to unpack .../libgmp10_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package libisl10:amd64.
+Preparing to unpack .../libisl10_0.12.2-1_amd64.deb ...
+Unpacking libisl10:amd64 (0.12.2-1) ...
+Selecting previously unselected package libcloog-isl4:amd64.
+Preparing to unpack .../libcloog-isl4_0.18.2-1_amd64.deb ...
+Unpacking libcloog-isl4:amd64 (0.18.2-1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgomp1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgssrpc4:amd64.
+Preparing to unpack .../libgssrpc4_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libgssrpc4:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libitm1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libkadm5clnt-mit9:amd64.
+Preparing to unpack .../libkadm5clnt-mit9_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkadm5clnt-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libkdb5-7:amd64.
+Preparing to unpack .../libkdb5-7_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkdb5-7:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libkadm5srv-mit9:amd64.
+Preparing to unpack .../libkadm5srv-mit9_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkadm5srv-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libmpfr4:amd64.
+Preparing to unpack .../libmpfr4_3.1.2-1_amd64.deb ...
+Unpacking libmpfr4:amd64 (3.1.2-1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libquadmath0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libtsan0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgnutlsxx27:amd64.
+Preparing to unpack .../libgnutlsxx27_2.12.23-12ubuntu2_amd64.deb ...
+Unpacking libgnutlsxx27:amd64 (2.12.23-12ubuntu2) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../libmpc3_1.0.1-1ubuntu1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.1-1ubuntu1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.24-5ubuntu3_amd64.deb ...
+Unpacking binutils (2.24-5ubuntu3) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.19-0ubuntu6_amd64.deb ...
+Unpacking libc-dev-bin (2.19-0ubuntu6) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_3.13.0-27.50_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (3.13.0-27.50) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.19-0ubuntu6_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.19-0ubuntu6) ...
+Selecting previously unselected package cpp-4.8.
+Preparing to unpack .../cpp-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking cpp-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking cpp (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package libgcc-4.8-dev:amd64.
+Preparing to unpack .../libgcc-4.8-dev_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgcc-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package gcc-4.8.
+Preparing to unpack .../gcc-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking gcc-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking gcc (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package libstdc++-4.8-dev:amd64.
+Preparing to unpack .../libstdc++-4.8-dev_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package g++-4.8.
+Preparing to unpack .../g++-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking g++-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking g++ (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package make.
+Preparing to unpack .../make_3.81-8.2ubuntu3_amd64.deb ...
+Unpacking make (3.81-8.2ubuntu3) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../libdpkg-perl_1.17.5ubuntu5.2_all.deb ...
+Unpacking libdpkg-perl (1.17.5ubuntu5.2) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../dpkg-dev_1.17.5ubuntu5.2_all.deb ...
+Unpacking dpkg-dev (1.17.5ubuntu5.2) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../build-essential_11.6ubuntu6_amd64.deb ...
+Unpacking build-essential (11.6ubuntu6) ...
+Selecting previously unselected package exfat-fuse.
+Preparing to unpack .../exfat-fuse_1.0.1-1_amd64.deb ...
+Unpacking exfat-fuse (1.0.1-1) ...
+Selecting previously unselected package exfat-utils.
+Preparing to unpack .../exfat-utils_1.0.1-1_amd64.deb ...
+Unpacking exfat-utils (1.0.1-1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20-3ubuntu2_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20-3ubuntu2) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20-3ubuntu2_amd64.deb ...
+Unpacking fakeroot (1.20-3ubuntu2) ...
+Selecting previously unselected package comerr-dev.
+Preparing to unpack .../comerr-dev_2.1-1.42.9-3ubuntu1_amd64.deb ...
+Unpacking comerr-dev (2.1-1.42.9-3ubuntu1) ...
+Selecting previously unselected package krb5-multidev.
+Preparing to unpack .../krb5-multidev_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking krb5-multidev (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../libalgorithm-diff-perl_1.19.02-3_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.02-3) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-2build4_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-2build4) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../libalgorithm-merge-perl_0.08-2_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.26-1ubuntu4_amd64.deb ...
+Unpacking pkg-config (0.26-1ubuntu4) ...
+Selecting previously unselected package libidn11-dev.
+Preparing to unpack .../libidn11-dev_1.28-1ubuntu2_amd64.deb ...
+Unpacking libidn11-dev (1.28-1ubuntu2) ...
+Selecting previously unselected package libkrb5-dev.
+Preparing to unpack .../libkrb5-dev_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkrb5-dev (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libldap2-dev:amd64.
+Preparing to unpack .../libldap2-dev_2.4.31-1+nmu2ubuntu8_amd64.deb ...
+Unpacking libldap2-dev:amd64 (2.4.31-1+nmu2ubuntu8) ...
+Selecting previously unselected package libgpg-error-dev.
+Preparing to unpack .../libgpg-error-dev_1.12-0.2ubuntu1_amd64.deb ...
+Unpacking libgpg-error-dev (1.12-0.2ubuntu1) ...
+Selecting previously unselected package libgcrypt11-dev.
+Preparing to unpack .../libgcrypt11-dev_1.5.3-2ubuntu4_amd64.deb ...
+Unpacking libgcrypt11-dev (1.5.3-2ubuntu4) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libtasn1-6-dev.
+Preparing to unpack .../libtasn1-6-dev_3.4-3_amd64.deb ...
+Unpacking libtasn1-6-dev (3.4-3) ...
+Selecting previously unselected package libp11-kit-dev.
+Preparing to unpack .../libp11-kit-dev_0.20.2-2ubuntu2_amd64.deb ...
+Unpacking libp11-kit-dev (0.20.2-2ubuntu2) ...
+Selecting previously unselected package libgnutls-dev.
+Preparing to unpack .../libgnutls-dev_2.12.23-12ubuntu2_amd64.deb ...
+Unpacking libgnutls-dev (2.12.23-12ubuntu2) ...
+Selecting previously unselected package librtmp-dev.
+Preparing to unpack .../librtmp-dev_2.4+20121230.gitdf6c518-1_amd64.deb ...
+Unpacking librtmp-dev (2.4+20121230.gitdf6c518-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.1_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.1) ...
+Selecting previously unselected package libcurl4-openssl-dev:amd64.
+Preparing to unpack .../libcurl4-openssl-dev_7.35.0-1ubuntu2_amd64.deb ...
+Unpacking libcurl4-openssl-dev:amd64 (7.35.0-1ubuntu2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../libfile-fcntllock-perl_0.14-2build1_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.14-2build1) ...
+Selecting previously unselected package libsepol1-dev.
+Preparing to unpack .../libsepol1-dev_2.2-1_amd64.deb ...
+Unpacking libsepol1-dev (2.2-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libselinux1-dev:amd64.
+Preparing to unpack .../libselinux1-dev_2.2.2-1ubuntu0.1_amd64.deb ...
+Unpacking libselinux1-dev:amd64 (2.2.2-1ubuntu0.1) ...
+Selecting previously unselected package libfuse-dev.
+Preparing to unpack .../libfuse-dev_2.9.2-4ubuntu4_amd64.deb ...
+Unpacking libfuse-dev (2.9.2-4ubuntu4) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.1_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.1) ...
+Selecting previously unselected package libxml2-dev:amd64.
+Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3ubuntu4.1_amd64.deb ...
+Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_3.54-1ubuntu1_all.deb ...
+Unpacking manpages-dev (3.54-1ubuntu1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+Processing triggers for install-info (5.2.0.dfsg.1-2) ...
+Setting up libssl1.0.0:amd64 (1.0.1f-1ubuntu2.1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Setting up libasan0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libatomic1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up libisl10:amd64 (0.12.2-1) ...
+Setting up libcloog-isl4:amd64 (0.18.2-1) ...
+Setting up libgomp1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgssrpc4:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libitm1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libkadm5clnt-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libkdb5-7:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libkadm5srv-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libmpfr4:amd64 (3.1.2-1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libquadmath0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libtsan0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgnutlsxx27:amd64 (2.12.23-12ubuntu2) ...
+Setting up libmpc3:amd64 (1.0.1-1ubuntu1) ...
+Setting up binutils (2.24-5ubuntu3) ...
+Setting up libc-dev-bin (2.19-0ubuntu6) ...
+Setting up linux-libc-dev:amd64 (3.13.0-27.50) ...
+Setting up libc6-dev:amd64 (2.19-0ubuntu6) ...
+Setting up cpp-4.8 (4.8.2-19ubuntu1) ...
+Setting up cpp (4:4.8.2-1ubuntu6) ...
+Setting up libgcc-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Setting up gcc-4.8 (4.8.2-19ubuntu1) ...
+Setting up gcc (4:4.8.2-1ubuntu6) ...
+Setting up libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Setting up g++-4.8 (4.8.2-19ubuntu1) ...
+Setting up g++ (4:4.8.2-1ubuntu6) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up make (3.81-8.2ubuntu3) ...
+Setting up libdpkg-perl (1.17.5ubuntu5.2) ...
+Setting up dpkg-dev (1.17.5ubuntu5.2) ...
+Setting up build-essential (11.6ubuntu6) ...
+Setting up exfat-fuse (1.0.1-1) ...
+Setting up exfat-utils (1.0.1-1) ...
+Setting up libfakeroot:amd64 (1.20-3ubuntu2) ...
+Setting up fakeroot (1.20-3ubuntu2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up comerr-dev (2.1-1.42.9-3ubuntu1) ...
+Setting up krb5-multidev (1.12+dfsg-2ubuntu4) ...
+Setting up libalgorithm-diff-perl (1.19.02-3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-2build4) ...
+Setting up libalgorithm-merge-perl (0.08-2) ...
+Setting up pkg-config (0.26-1ubuntu4) ...
+Setting up libidn11-dev (1.28-1ubuntu2) ...
+Setting up libkrb5-dev (1.12+dfsg-2ubuntu4) ...
+Setting up libldap2-dev:amd64 (2.4.31-1+nmu2ubuntu8) ...
+Setting up libgpg-error-dev (1.12-0.2ubuntu1) ...
+Setting up libgcrypt11-dev (1.5.3-2ubuntu4) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libtasn1-6-dev (3.4-3) ...
+Setting up libp11-kit-dev (0.20.2-2ubuntu2) ...
+Setting up libgnutls-dev (2.12.23-12ubuntu2) ...
+Setting up librtmp-dev (2.4+20121230.gitdf6c518-1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.1) ...
+Setting up libcurl4-openssl-dev:amd64 (7.35.0-1ubuntu2) ...
+Setting up libfile-fcntllock-perl (0.14-2build1) ...
+Setting up libsepol1-dev (2.2-1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libselinux1-dev:amd64 (2.2.2-1ubuntu0.1) ...
+Setting up libfuse-dev (2.9.2-4ubuntu4) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.1) ...
+Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Setting up manpages-dev (3.54-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package fuse-utils is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+fuse-2.8.6/
+fuse-2.8.6/configure.in
+fuse-2.8.6/m4/
+fuse-2.8.6/m4/libtool.m4
+fuse-2.8.6/m4/lt~obsolete.m4
+fuse-2.8.6/m4/ltoptions.m4
+fuse-2.8.6/m4/ltsugar.m4
+fuse-2.8.6/m4/ltversion.m4
+fuse-2.8.6/INSTALL
+fuse-2.8.6/COPYING
+fuse-2.8.6/NEWS
+fuse-2.8.6/doc/
+fuse-2.8.6/doc/Doxyfile
+fuse-2.8.6/doc/how-fuse-works
+fuse-2.8.6/doc/kernel.txt
+fuse-2.8.6/depcomp
+fuse-2.8.6/ChangeLog
+fuse-2.8.6/fuse.pc.in
+fuse-2.8.6/COPYING.LIB
+fuse-2.8.6/configure
+fuse-2.8.6/aclocal.m4
+fuse-2.8.6/AUTHORS
+fuse-2.8.6/ltmain.sh
+fuse-2.8.6/FAQ
+fuse-2.8.6/example/
+fuse-2.8.6/example/hello.c
+fuse-2.8.6/example/fusexmp.c
+fuse-2.8.6/example/fioc.h
+fuse-2.8.6/example/fioclient.c
+fuse-2.8.6/example/hello_ll.c
+fuse-2.8.6/example/fioc.c
+fuse-2.8.6/example/fusexmp_fh.c
+fuse-2.8.6/example/cusexmp.c
+fuse-2.8.6/example/Makefile.am
+fuse-2.8.6/example/fsel.c
+fuse-2.8.6/example/Makefile.in
+fuse-2.8.6/example/null.c
+fuse-2.8.6/example/fselclient.c
+fuse-2.8.6/missing
+fuse-2.8.6/Makefile.am
+fuse-2.8.6/Filesystems
+fuse-2.8.6/compile
+fuse-2.8.6/config.rpath
+fuse-2.8.6/install-sh
+fuse-2.8.6/include/
+fuse-2.8.6/include/old/
+fuse-2.8.6/include/old/fuse.h
+fuse-2.8.6/include/config.h.in
+fuse-2.8.6/include/fuse_opt.h
+fuse-2.8.6/include/fuse_lowlevel.h
+fuse-2.8.6/include/ulockmgr.h
+fuse-2.8.6/include/cuse_lowlevel.h
+fuse-2.8.6/include/fuse.h
+fuse-2.8.6/include/fuse_common.h
+fuse-2.8.6/include/Makefile.am
+fuse-2.8.6/include/fuse_lowlevel_compat.h
+fuse-2.8.6/include/Makefile.in
+fuse-2.8.6/include/fuse_common_compat.h
+fuse-2.8.6/include/fuse_compat.h
+fuse-2.8.6/include/fuse_kernel.h
+fuse-2.8.6/lib/
+fuse-2.8.6/lib/fuse_session.c
+fuse-2.8.6/lib/fuse_loop.c
+fuse-2.8.6/lib/fuse.c
+fuse-2.8.6/lib/mount_util.h
+fuse-2.8.6/lib/helper.c
+fuse-2.8.6/lib/mount_util.c
+fuse-2.8.6/lib/fuse_loop_mt.c
+fuse-2.8.6/lib/ulockmgr.c
+fuse-2.8.6/lib/fuse_i.h
+fuse-2.8.6/lib/fuse_kern_chan.c
+fuse-2.8.6/lib/fuse_opt.c
+fuse-2.8.6/lib/mount.c
+fuse-2.8.6/lib/modules/
+fuse-2.8.6/lib/modules/iconv.c
+fuse-2.8.6/lib/modules/subdir.c
+fuse-2.8.6/lib/fuse_misc.h
+fuse-2.8.6/lib/fuse_lowlevel.c
+fuse-2.8.6/lib/fuse_versionscript
+fuse-2.8.6/lib/Makefile.am
+fuse-2.8.6/lib/fuse_signals.c
+fuse-2.8.6/lib/cuse_lowlevel.c
+fuse-2.8.6/lib/fuse_mt.c
+fuse-2.8.6/lib/Makefile.in
+fuse-2.8.6/lib/mount_bsd.c
+fuse-2.8.6/config.sub
+fuse-2.8.6/util/
+fuse-2.8.6/util/fusermount.c
+fuse-2.8.6/util/mount.fuse.c
+fuse-2.8.6/util/udev.rules
+fuse-2.8.6/util/ulockmgr_server.c
+fuse-2.8.6/util/Makefile.am
+fuse-2.8.6/util/init_script
+fuse-2.8.6/util/Makefile.in
+fuse-2.8.6/Makefile.in
+fuse-2.8.6/config.guess
+fuse-2.8.6/README
+fuse-2.8.6/README.NFS
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking whether gcc and cc understand -c and -o together... yes
+checking for fork... yes
+checking for setxattr... yes
+checking for fdatasync... yes
+checking for struct stat.st_atim... yes
+checking for struct stat.st_atimespec... no
+checking for library containing dlopen... -ldl
+checking for library containing clock_gettime... none required
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+configure: creating ./config.status
+config.status: creating fuse.pc
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating util/Makefile
+config.status: creating example/Makefile
+config.status: creating include/Makefile
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making all in include
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make  all-am
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+Making all in lib
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c -o fuse.lo fuse.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c fuse.c  -fPIC -DPIC -o .libs/fuse.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c fuse.c -o fuse.o >/dev/null 2>&1
+mv -f .deps/fuse.Tpo .deps/fuse.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c -o fuse_kern_chan.lo fuse_kern_chan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c fuse_kern_chan.c  -fPIC -DPIC -o .libs/fuse_kern_chan.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c fuse_kern_chan.c -o fuse_kern_chan.o >/dev/null 2>&1
+mv -f .deps/fuse_kern_chan.Tpo .deps/fuse_kern_chan.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c -o fuse_loop.lo fuse_loop.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c fuse_loop.c  -fPIC -DPIC -o .libs/fuse_loop.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c fuse_loop.c -o fuse_loop.o >/dev/null 2>&1
+mv -f .deps/fuse_loop.Tpo .deps/fuse_loop.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c -o fuse_loop_mt.lo fuse_loop_mt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c fuse_loop_mt.c  -fPIC -DPIC -o .libs/fuse_loop_mt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c fuse_loop_mt.c -o fuse_loop_mt.o >/dev/null 2>&1
+mv -f .deps/fuse_loop_mt.Tpo .deps/fuse_loop_mt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c -o fuse_lowlevel.lo fuse_lowlevel.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c fuse_lowlevel.c  -fPIC -DPIC -o .libs/fuse_lowlevel.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c fuse_lowlevel.c -o fuse_lowlevel.o >/dev/null 2>&1
+mv -f .deps/fuse_lowlevel.Tpo .deps/fuse_lowlevel.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c -o fuse_mt.lo fuse_mt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c fuse_mt.c  -fPIC -DPIC -o .libs/fuse_mt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c fuse_mt.c -o fuse_mt.o >/dev/null 2>&1
+mv -f .deps/fuse_mt.Tpo .deps/fuse_mt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c -o fuse_opt.lo fuse_opt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c fuse_opt.c  -fPIC -DPIC -o .libs/fuse_opt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c fuse_opt.c -o fuse_opt.o >/dev/null 2>&1
+mv -f .deps/fuse_opt.Tpo .deps/fuse_opt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c -o fuse_session.lo fuse_session.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c fuse_session.c  -fPIC -DPIC -o .libs/fuse_session.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c fuse_session.c -o fuse_session.o >/dev/null 2>&1
+mv -f .deps/fuse_session.Tpo .deps/fuse_session.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c -o fuse_signals.lo fuse_signals.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c fuse_signals.c  -fPIC -DPIC -o .libs/fuse_signals.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c fuse_signals.c -o fuse_signals.o >/dev/null 2>&1
+mv -f .deps/fuse_signals.Tpo .deps/fuse_signals.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c -o cuse_lowlevel.lo cuse_lowlevel.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c cuse_lowlevel.c  -fPIC -DPIC -o .libs/cuse_lowlevel.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c cuse_lowlevel.c -o cuse_lowlevel.o >/dev/null 2>&1
+mv -f .deps/cuse_lowlevel.Tpo .deps/cuse_lowlevel.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c -o helper.lo helper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c helper.c  -fPIC -DPIC -o .libs/helper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c helper.c -o helper.o >/dev/null 2>&1
+mv -f .deps/helper.Tpo .deps/helper.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c -o subdir.lo `test -f 'modules/subdir.c' || echo './'`modules/subdir.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c modules/subdir.c  -fPIC -DPIC -o .libs/subdir.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c modules/subdir.c -o subdir.o >/dev/null 2>&1
+mv -f .deps/subdir.Tpo .deps/subdir.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c -o iconv.lo `test -f 'modules/iconv.c' || echo './'`modules/iconv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c modules/iconv.c  -fPIC -DPIC -o .libs/iconv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c modules/iconv.c -o iconv.o >/dev/null 2>&1
+mv -f .deps/iconv.Tpo .deps/iconv.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c -o mount.lo mount.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c mount.c  -fPIC -DPIC -o .libs/mount.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c mount.c -o mount.o >/dev/null 2>&1
+mv -f .deps/mount.Tpo .deps/mount.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c -o mount_util.lo mount_util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c mount_util.c  -fPIC -DPIC -o .libs/mount_util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c mount_util.c -o mount_util.o >/dev/null 2>&1
+mv -f .deps/mount_util.Tpo .deps/mount_util.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -pthread -ldl   -version-number 2:8:6 -Wl,--version-script,./fuse_versionscript  -o libfuse.la -rpath /usr/lib fuse.lo fuse_kern_chan.lo fuse_loop.lo fuse_loop_mt.lo fuse_lowlevel.lo fuse_mt.lo fuse_opt.lo fuse_session.lo fuse_signals.lo cuse_lowlevel.lo helper.lo subdir.lo iconv.lo mount.lo mount_util.lo  
+libtool: link: gcc -shared  .libs/fuse.o .libs/fuse_kern_chan.o .libs/fuse_loop.o .libs/fuse_loop_mt.o .libs/fuse_lowlevel.o .libs/fuse_mt.o .libs/fuse_opt.o .libs/fuse_session.o .libs/fuse_signals.o .libs/cuse_lowlevel.o .libs/helper.o .libs/subdir.o .libs/iconv.o .libs/mount.o .libs/mount_util.o   -ldl  -pthread -Wl,--version-script -Wl,./fuse_versionscript   -pthread -Wl,-soname -Wl,libfuse.so.2 -o .libs/libfuse.so.2.8.6
+libtool: link: (cd ".libs" && rm -f "libfuse.so.2" && ln -s "libfuse.so.2.8.6" "libfuse.so.2")
+libtool: link: (cd ".libs" && rm -f "libfuse.so" && ln -s "libfuse.so.2.8.6" "libfuse.so")
+libtool: link: ar cru .libs/libfuse.a  fuse.o fuse_kern_chan.o fuse_loop.o fuse_loop_mt.o fuse_lowlevel.o fuse_mt.o fuse_opt.o fuse_session.o fuse_signals.o cuse_lowlevel.o helper.o subdir.o iconv.o mount.o mount_util.o
+libtool: link: ranlib .libs/libfuse.a
+libtool: link: ( cd ".libs" && rm -f "libfuse.la" && ln -s "../libfuse.la" "libfuse.la" )
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c -o ulockmgr.lo ulockmgr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c ulockmgr.c  -fPIC -DPIC -o .libs/ulockmgr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c ulockmgr.c -o ulockmgr.o >/dev/null 2>&1
+mv -f .deps/ulockmgr.Tpo .deps/ulockmgr.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -pthread -version-number 1:0:1  -o libulockmgr.la -rpath /usr/lib ulockmgr.lo  
+libtool: link: gcc -shared  .libs/ulockmgr.o    -pthread   -pthread -Wl,-soname -Wl,libulockmgr.so.1 -o .libs/libulockmgr.so.1.0.1
+libtool: link: (cd ".libs" && rm -f "libulockmgr.so.1" && ln -s "libulockmgr.so.1.0.1" "libulockmgr.so.1")
+libtool: link: (cd ".libs" && rm -f "libulockmgr.so" && ln -s "libulockmgr.so.1.0.1" "libulockmgr.so")
+libtool: link: ar cru .libs/libulockmgr.a  ulockmgr.o
+libtool: link: ranlib .libs/libulockmgr.a
+libtool: link: ( cd ".libs" && rm -f "libulockmgr.la" && ln -s "../libulockmgr.la" "libulockmgr.la" )
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+Making all in util
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../lib   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fusermount-fusermount.o -MD -MP -MF .deps/fusermount-fusermount.Tpo -c -o fusermount-fusermount.o `test -f 'fusermount.c' || echo './'`fusermount.c
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+Making install in include
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/fuse" || /bin/mkdir -p "/usr/include/fuse"
+ /usr/bin/install -c -m 644 fuse.h fuse_compat.h fuse_common.h fuse_common_compat.h fuse_lowlevel.h fuse_lowlevel_compat.h fuse_opt.h cuse_lowlevel.h '/usr/include/fuse'
+test -z "/usr/include" || /bin/mkdir -p "/usr/include"
+ /usr/bin/install -c -m 644 old/fuse.h ulockmgr.h '/usr/include'
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+Making install in lib
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+test -z "/usr/lib" || /bin/mkdir -p "/usr/lib"
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libfuse.la libulockmgr.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfuse.so.2.8.6 /usr/lib/libfuse.so.2.8.6
+libtool: install: (cd /usr/lib && { ln -s -f libfuse.so.2.8.6 libfuse.so.2 || { rm -f libfuse.so.2 && ln -s libfuse.so.2.8.6 libfuse.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfuse.so.2.8.6 libfuse.so || { rm -f libfuse.so && ln -s libfuse.so.2.8.6 libfuse.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfuse.lai /usr/lib/libfuse.la
+libtool: install: /usr/bin/install -c .libs/libulockmgr.so.1.0.1 /usr/lib/libulockmgr.so.1.0.1
+libtool: install: (cd /usr/lib && { ln -s -f libulockmgr.so.1.0.1 libulockmgr.so.1 || { rm -f libulockmgr.so.1 && ln -s libulockmgr.so.1.0.1 libulockmgr.so.1; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libulockmgr.so.1.0.1 libulockmgr.so || { rm -f libulockmgr.so && ln -s libulockmgr.so.1.0.1 libulockmgr.so; }; })
+libtool: install: /usr/bin/install -c .libs/libulockmgr.lai /usr/lib/libulockmgr.la
+libtool: install: /usr/bin/install -c .libs/libfuse.a /usr/lib/libfuse.a
+libtool: install: chmod 644 /usr/lib/libfuse.a
+libtool: install: ranlib /usr/lib/libfuse.a
+libtool: install: /usr/bin/install -c .libs/libulockmgr.a /usr/lib/libulockmgr.a
+libtool: install: chmod 644 /usr/lib/libulockmgr.a
+libtool: install: ranlib /usr/lib/libulockmgr.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+Making install in util
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../lib   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fusermount-fusermount.o -MD -MP -MF .deps/fusermount-fusermount.Tpo -c -o fusermount-fusermount.o `test -f 'fusermount.c' || echo './'`fusermount.c
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+s3fs-1.74/
+s3fs-1.74/COPYING
+s3fs-1.74/configure.ac
+s3fs-1.74/doc/
+s3fs-1.74/doc/Makefile.am
+s3fs-1.74/doc/Makefile.in
+s3fs-1.74/doc/man/
+s3fs-1.74/doc/man/s3fs.1
+s3fs-1.74/config.guess
+s3fs-1.74/INSTALL
+s3fs-1.74/NEWS
+s3fs-1.74/install-sh
+s3fs-1.74/Makefile.am
+s3fs-1.74/ChangeLog
+s3fs-1.74/test/
+s3fs-1.74/test/Makefile.am
+s3fs-1.74/test/sample_ahbe.conf
+s3fs-1.74/test/mergedir.sh
+s3fs-1.74/test/Makefile.in
+s3fs-1.74/test/require-root.sh
+s3fs-1.74/test/integration-test-common.sh
+s3fs-1.74/test/small-integration-test.sh
+s3fs-1.74/test/sample_delcache.sh
+s3fs-1.74/Makefile.in
+s3fs-1.74/config.sub
+s3fs-1.74/README
+s3fs-1.74/src/
+s3fs-1.74/src/s3fs_util.h
+s3fs-1.74/src/cache.h
+s3fs-1.74/src/string_util.cpp
+s3fs-1.74/src/Makefile.am
+s3fs-1.74/src/s3fs.h
+s3fs-1.74/src/fdcache.cpp
+s3fs-1.74/src/curl.cpp
+s3fs-1.74/src/common.h
+s3fs-1.74/src/Makefile.in
+s3fs-1.74/src/string_util.h
+s3fs-1.74/src/fdcache.h
+s3fs-1.74/src/cache.cpp
+s3fs-1.74/src/s3fs.cpp
+s3fs-1.74/src/s3fs_util.cpp
+s3fs-1.74/src/curl.h
+s3fs-1.74/depcomp
+s3fs-1.74/AUTHORS
+s3fs-1.74/aclocal.m4
+s3fs-1.74/missing
+s3fs-1.74/configure
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for DEPS... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for malloc_trim... yes
+checking Initializing libcurl build with NSS... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating doc/Makefile
+config.status: executing depfiles commands
+Making all in src
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT s3fs.o -MD -MP -MF .deps/s3fs.Tpo -c -o s3fs.o s3fs.cpp
+mv -f .deps/s3fs.Tpo .deps/s3fs.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT curl.o -MD -MP -MF .deps/curl.Tpo -c -o curl.o curl.cpp
+mv -f .deps/curl.Tpo .deps/curl.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT cache.o -MD -MP -MF .deps/cache.Tpo -c -o cache.o cache.cpp
+mv -f .deps/cache.Tpo .deps/cache.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT string_util.o -MD -MP -MF .deps/string_util.Tpo -c -o string_util.o string_util.cpp
+mv -f .deps/string_util.Tpo .deps/string_util.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT s3fs_util.o -MD -MP -MF .deps/s3fs_util.Tpo -c -o s3fs_util.o s3fs_util.cpp
+mv -f .deps/s3fs_util.Tpo .deps/s3fs_util.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT fdcache.o -MD -MP -MF .deps/fdcache.Tpo -c -o fdcache.o fdcache.cpp
+mv -f .deps/fdcache.Tpo .deps/fdcache.Po
+g++  -g -O2 -Wall -D_FILE_OFFSET_BITS=64   -o s3fs s3fs.o curl.o cache.o string_util.o s3fs_util.o fdcache.o -pthread -lfuse -lcurl -lxml2 -lcrypto   
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+Making all in test
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+Making all in doc
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+Making install in src
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+test -z "/usr/bin" || /bin/mkdir -p "/usr/bin"
+  /usr/bin/install -c s3fs '/usr/bin'
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+Making install in test
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+Making install in doc
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/usr/share/man/man1"
+ /usr/bin/install -c -m 644 man/s3fs.1 '/usr/share/man/man1'
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+ PPA for the free exFAT file system implementation project: http://code.google.com/p/exfat/
+ More info: https://launchpad.net/~relan/+archive/exfat
+OK
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty InRelease
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates InRelease
+Get:1 http://us-west-1.ec2.archive.ubuntu.com trusty Release.gpg [933 B]
+Get:2 http://us-west-1.ec2.archive.ubuntu.com trusty-updates Release.gpg [933 B]
+Get:3 http://us-west-1.ec2.archive.ubuntu.com trusty Release [58.5 kB]
+Get:4 http://us-west-1.ec2.archive.ubuntu.com trusty-updates Release [58.5 kB]
+Ign http://security.ubuntu.com trusty-security InRelease
+Get:5 http://us-west-1.ec2.archive.ubuntu.com trusty/main Sources [1,064 kB]
+Ign http://ppa.launchpad.net trusty InRelease
+Get:6 http://security.ubuntu.com trusty-security Release.gpg [933 B]
+Get:7 http://us-west-1.ec2.archive.ubuntu.com trusty/universe Sources [6,399 kB]
+Get:8 http://security.ubuntu.com trusty-security Release [58.5 kB]
+Get:9 http://ppa.launchpad.net trusty Release.gpg [316 B]
+Get:10 http://ppa.launchpad.net trusty Release [14.0 kB]
+Get:11 http://ppa.launchpad.net trusty/main amd64 Packages [762 B]
+Get:12 http://us-west-1.ec2.archive.ubuntu.com trusty/main amd64 Packages [1,350 kB]
+Get:13 http://us-west-1.ec2.archive.ubuntu.com trusty/universe amd64 Packages [5,859 kB]
+Get:14 http://security.ubuntu.com trusty-security/main Sources [16.0 kB]
+Get:15 http://security.ubuntu.com trusty-security/universe Sources [4,212 B]
+Get:16 http://security.ubuntu.com trusty-security/main amd64 Packages [51.8 kB]
+Get:17 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Sources [45.7 kB]
+Get:18 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Sources [28.2 kB]
+Get:19 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages [109 kB]
+Get:20 http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages [74.9 kB]
+Get:21 http://security.ubuntu.com trusty-security/universe amd64 Packages [17.9 kB]
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/main Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/main Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/universe Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty/universe Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/main Translation-en
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Translation-en_US
+Ign http://us-west-1.ec2.archive.ubuntu.com trusty-updates/universe Translation-en
+Get:22 http://security.ubuntu.com trusty-security/main Translation-en [24.4 kB]
+Get:23 http://security.ubuntu.com trusty-security/universe Translation-en [9,065 B]
+Ign http://ppa.launchpad.net trusty/main Translation-en_US
+Ign http://ppa.launchpad.net trusty/main Translation-en
+Ign http://security.ubuntu.com trusty-security/main Translation-en_US
+Ign http://security.ubuntu.com trusty-security/universe Translation-en_US
+Fetched 15.2 MB in 8s (1,707 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mime-support is already the newest version.
+The following extra packages will be installed:
+  binutils comerr-dev cpp cpp-4.8 dpkg-dev exfat-fuse fakeroot g++ g++-4.8 gcc
+  gcc-4.8 krb5-multidev libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan0 libatomic1 libc-dev-bin libc6-dev
+  libcloog-isl4 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-4.8-dev
+  libgcrypt11-dev libgmp10 libgnutls-dev libgnutlsxx27 libgomp1
+  libgpg-error-dev libgssrpc4 libidn11-dev libisl10 libitm1 libkadm5clnt-mit9
+  libkadm5srv-mit9 libkdb5-7 libkrb5-dev libldap2-dev libmpc3 libmpfr4
+  libp11-kit-dev libpcre3-dev libpcrecpp0 libquadmath0 librtmp-dev libselinux1
+  libselinux1-dev libsepol1-dev libssl-dev libssl-doc libssl1.0.0
+  libstdc++-4.8-dev libtasn1-6-dev libtsan0 libxml2 linux-libc-dev make
+  manpages-dev pkg-config zlib1g-dev
+Suggested packages:
+  binutils-doc doc-base cpp-doc gcc-4.8-locales debian-keyring g++-multilib
+  g++-4.8-multilib gcc-4.8-doc libstdc++6-4.8-dbg gcc-multilib autoconf
+  automake1.9 libtool flex bison gdb gcc-doc gcc-4.8-multilib libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg
+  libbacktrace1-dbg libquadmath0-dbg binutils-gold krb5-doc glibc-doc
+  libcurl4-doc libcurl3-dbg libgcrypt11-doc gnutls26-doc gnutls-bin krb5-user
+  libstdc++-4.8-doc make-doc
+The following NEW packages will be installed:
+  binutils build-essential comerr-dev cpp cpp-4.8 dpkg-dev exfat-fuse
+  exfat-utils fakeroot g++ g++-4.8 gcc gcc-4.8 krb5-multidev
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan0 libatomic1 libc-dev-bin libc6-dev libcloog-isl4
+  libcurl4-openssl-dev libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libfuse-dev libgcc-4.8-dev libgcrypt11-dev libgmp10 libgnutls-dev
+  libgnutlsxx27 libgomp1 libgpg-error-dev libgssrpc4 libidn11-dev libisl10
+  libitm1 libkadm5clnt-mit9 libkadm5srv-mit9 libkdb5-7 libkrb5-dev
+  libldap2-dev libmpc3 libmpfr4 libp11-kit-dev libpcre3-dev libpcrecpp0
+  libquadmath0 librtmp-dev libselinux1-dev libsepol1-dev libssl-dev libssl-doc
+  libstdc++-4.8-dev libtasn1-6-dev libtsan0 libxml2-dev linux-libc-dev make
+  manpages-dev pkg-config zlib1g-dev
+The following packages will be upgraded:
+  libselinux1 libssl1.0.0 libxml2
+3 upgraded, 63 newly installed, 0 to remove and 43 not upgraded.
+Need to get 36.1 MB of archives.
+After this operation, 130 MB of additional disk space will be used.
+Get:1 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libselinux1 amd64 2.2.2-1ubuntu0.1 [58.7 kB]
+Get:2 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl1.0.0 amd64 1.0.1f-1ubuntu2.1 [822 kB]
+Get:3 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2 amd64 2.9.1+dfsg1-3ubuntu4.1 [570 kB]
+Get:4 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libasan0 amd64 4.8.2-19ubuntu1 [63.0 kB]
+Get:5 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libatomic1 amd64 4.8.2-19ubuntu1 [8,626 B]
+Get:6 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB]
+Get:7 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libisl10 amd64 0.12.2-1 [419 kB]
+Get:8 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libcloog-isl4 amd64 0.18.2-1 [57.5 kB]
+Get:9 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgomp1 amd64 4.8.2-19ubuntu1 [23.2 kB]
+Get:10 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgssrpc4 amd64 1.12+dfsg-2ubuntu4 [53.1 kB]
+Get:11 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libitm1 amd64 4.8.2-19ubuntu1 [28.5 kB]
+Get:12 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkadm5clnt-mit9 amd64 1.12+dfsg-2ubuntu4 [36.1 kB]
+Get:13 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkdb5-7 amd64 1.12+dfsg-2ubuntu4 [36.2 kB]
+Get:14 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkadm5srv-mit9 amd64 1.12+dfsg-2ubuntu4 [50.2 kB]
+Get:15 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libmpfr4 amd64 3.1.2-1 [203 kB]
+Get:16 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libpcrecpp0 amd64 1:8.31-2ubuntu2 [14.5 kB]
+Get:17 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libquadmath0 amd64 4.8.2-19ubuntu1 [126 kB]
+Get:18 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libtsan0 amd64 4.8.2-19ubuntu1 [94.7 kB]
+Get:19 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgnutlsxx27 amd64 2.12.23-12ubuntu2 [17.3 kB]
+Get:20 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libmpc3 amd64 1.0.1-1ubuntu1 [38.4 kB]
+Get:21 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main binutils amd64 2.24-5ubuntu3 [2,071 kB]
+Get:22 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libc-dev-bin amd64 2.19-0ubuntu6 [69.0 kB]
+Get:23 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main linux-libc-dev amd64 3.13.0-27.50 [780 kB]
+Get:24 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libc6-dev amd64 2.19-0ubuntu6 [1,911 kB]
+Get:25 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main cpp-4.8 amd64 4.8.2-19ubuntu1 [4,439 kB]
+Get:26 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main cpp amd64 4:4.8.2-1ubuntu6 [27.5 kB]
+Get:27 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgcc-4.8-dev amd64 4.8.2-19ubuntu1 [1,688 kB]
+Get:28 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main gcc-4.8 amd64 4.8.2-19ubuntu1 [5,012 kB]
+Get:29 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main gcc amd64 4:4.8.2-1ubuntu6 [5,098 B]
+Get:30 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libstdc++-4.8-dev amd64 4.8.2-19ubuntu1 [1,050 kB]
+Get:31 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main g++-4.8 amd64 4.8.2-19ubuntu1 [7,038 kB]
+Get:32 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main g++ amd64 4:4.8.2-1ubuntu6 [1,490 B]
+Get:33 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main make amd64 3.81-8.2ubuntu3 [119 kB]
+Get:34 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libdpkg-perl all 1.17.5ubuntu5.2 [179 kB]
+Get:35 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main dpkg-dev all 1.17.5ubuntu5.2 [726 kB]
+Get:36 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main build-essential amd64 11.6ubuntu6 [4,838 B]
+Get:37 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/universe exfat-fuse amd64 1.0.1-1 [26.0 kB]
+Get:38 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/universe exfat-utils amd64 1.0.1-1 [85.7 kB]
+Get:39 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfakeroot amd64 1.20-3ubuntu2 [25.4 kB]
+Get:40 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main fakeroot amd64 1.20-3ubuntu2 [55.0 kB]
+Get:41 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main comerr-dev amd64 2.1-1.42.9-3ubuntu1 [38.3 kB]
+Get:42 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main krb5-multidev amd64 1.12+dfsg-2ubuntu4 [111 kB]
+Get:43 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-perl all 1.19.02-3 [50.0 kB]
+Get:44 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-xs-perl amd64 0.04-2build4 [12.6 kB]
+Get:45 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
+Get:46 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main pkg-config amd64 0.26-1ubuntu4 [40.9 kB]
+Get:47 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libidn11-dev amd64 1.28-1ubuntu2 [517 kB]
+Get:48 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libkrb5-dev amd64 1.12+dfsg-2ubuntu4 [14.4 kB]
+Get:49 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libldap2-dev amd64 2.4.31-1+nmu2ubuntu8 [259 kB]
+Get:50 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgpg-error-dev amd64 1.12-0.2ubuntu1 [20.1 kB]
+Get:51 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgcrypt11-dev amd64 1.5.3-2ubuntu4 [273 kB]
+Get:52 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main zlib1g-dev amd64 1:1.2.8.dfsg-1ubuntu1 [183 kB]
+Get:53 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libtasn1-6-dev amd64 3.4-3 [383 kB]
+Get:54 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libp11-kit-dev amd64 0.20.2-2ubuntu2 [56.4 kB]
+Get:55 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libgnutls-dev amd64 2.12.23-12ubuntu2 [371 kB]
+Get:56 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main librtmp-dev amd64 2.4+20121230.gitdf6c518-1 [67.1 kB]
+Get:57 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl-dev amd64 1.0.1f-1ubuntu2.1 [1,070 kB]
+Get:58 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libcurl4-openssl-dev amd64 7.35.0-1ubuntu2 [243 kB]
+Get:59 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfile-fcntllock-perl amd64 0.14-2build1 [15.9 kB]
+Get:60 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libsepol1-dev amd64 2.2-1 [192 kB]
+Get:61 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libpcre3-dev amd64 1:8.31-2ubuntu2 [237 kB]
+Get:62 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libselinux1-dev amd64 2.2.2-1ubuntu0.1 [124 kB]
+Get:63 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main libfuse-dev amd64 2.9.2-4ubuntu4 [103 kB]
+Get:64 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libssl-doc all 1.0.1f-1ubuntu2.1 [965 kB]
+Get:65 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2-dev amd64 2.9.1+dfsg1-3ubuntu4.1 [628 kB]
+Get:66 http://us-west-1.ec2.archive.ubuntu.com/ubuntu/ trusty/main manpages-dev all 3.54-1ubuntu1 [1,820 kB]
+Fetched 36.1 MB in 4s (8,481 kB/s)
+(Reading database ... 51050 files and directories currently installed.)
+Preparing to unpack .../libselinux1_2.2.2-1ubuntu0.1_amd64.deb ...
+Unpacking libselinux1:amd64 (2.2.2-1ubuntu0.1) over (2.2.2-1) ...
+Setting up libselinux1:amd64 (2.2.2-1ubuntu0.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+(Reading database ... 51050 files and directories currently installed.)
+Preparing to unpack .../libssl1.0.0_1.0.1f-1ubuntu2.1_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1f-1ubuntu2.1) over (1.0.1f-1ubuntu2) ...
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3ubuntu4.1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.1) over (2.9.1+dfsg1-3ubuntu4) ...
+Selecting previously unselected package libasan0:amd64.
+Preparing to unpack .../libasan0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libasan0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libatomic1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgmp10:amd64.
+Preparing to unpack .../libgmp10_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package libisl10:amd64.
+Preparing to unpack .../libisl10_0.12.2-1_amd64.deb ...
+Unpacking libisl10:amd64 (0.12.2-1) ...
+Selecting previously unselected package libcloog-isl4:amd64.
+Preparing to unpack .../libcloog-isl4_0.18.2-1_amd64.deb ...
+Unpacking libcloog-isl4:amd64 (0.18.2-1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgomp1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgssrpc4:amd64.
+Preparing to unpack .../libgssrpc4_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libgssrpc4:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libitm1:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libkadm5clnt-mit9:amd64.
+Preparing to unpack .../libkadm5clnt-mit9_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkadm5clnt-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libkdb5-7:amd64.
+Preparing to unpack .../libkdb5-7_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkdb5-7:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libkadm5srv-mit9:amd64.
+Preparing to unpack .../libkadm5srv-mit9_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkadm5srv-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libmpfr4:amd64.
+Preparing to unpack .../libmpfr4_3.1.2-1_amd64.deb ...
+Unpacking libmpfr4:amd64 (3.1.2-1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libquadmath0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libtsan0:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libgnutlsxx27:amd64.
+Preparing to unpack .../libgnutlsxx27_2.12.23-12ubuntu2_amd64.deb ...
+Unpacking libgnutlsxx27:amd64 (2.12.23-12ubuntu2) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../libmpc3_1.0.1-1ubuntu1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.1-1ubuntu1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.24-5ubuntu3_amd64.deb ...
+Unpacking binutils (2.24-5ubuntu3) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.19-0ubuntu6_amd64.deb ...
+Unpacking libc-dev-bin (2.19-0ubuntu6) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_3.13.0-27.50_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (3.13.0-27.50) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.19-0ubuntu6_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.19-0ubuntu6) ...
+Selecting previously unselected package cpp-4.8.
+Preparing to unpack .../cpp-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking cpp-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking cpp (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package libgcc-4.8-dev:amd64.
+Preparing to unpack .../libgcc-4.8-dev_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgcc-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package gcc-4.8.
+Preparing to unpack .../gcc-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking gcc-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking gcc (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package libstdc++-4.8-dev:amd64.
+Preparing to unpack .../libstdc++-4.8-dev_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package g++-4.8.
+Preparing to unpack .../g++-4.8_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking g++-4.8 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a4.8.2-1ubuntu6_amd64.deb ...
+Unpacking g++ (4:4.8.2-1ubuntu6) ...
+Selecting previously unselected package make.
+Preparing to unpack .../make_3.81-8.2ubuntu3_amd64.deb ...
+Unpacking make (3.81-8.2ubuntu3) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../libdpkg-perl_1.17.5ubuntu5.2_all.deb ...
+Unpacking libdpkg-perl (1.17.5ubuntu5.2) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../dpkg-dev_1.17.5ubuntu5.2_all.deb ...
+Unpacking dpkg-dev (1.17.5ubuntu5.2) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../build-essential_11.6ubuntu6_amd64.deb ...
+Unpacking build-essential (11.6ubuntu6) ...
+Selecting previously unselected package exfat-fuse.
+Preparing to unpack .../exfat-fuse_1.0.1-1_amd64.deb ...
+Unpacking exfat-fuse (1.0.1-1) ...
+Selecting previously unselected package exfat-utils.
+Preparing to unpack .../exfat-utils_1.0.1-1_amd64.deb ...
+Unpacking exfat-utils (1.0.1-1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20-3ubuntu2_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20-3ubuntu2) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20-3ubuntu2_amd64.deb ...
+Unpacking fakeroot (1.20-3ubuntu2) ...
+Selecting previously unselected package comerr-dev.
+Preparing to unpack .../comerr-dev_2.1-1.42.9-3ubuntu1_amd64.deb ...
+Unpacking comerr-dev (2.1-1.42.9-3ubuntu1) ...
+Selecting previously unselected package krb5-multidev.
+Preparing to unpack .../krb5-multidev_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking krb5-multidev (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../libalgorithm-diff-perl_1.19.02-3_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.02-3) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-2build4_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-2build4) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../libalgorithm-merge-perl_0.08-2_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.26-1ubuntu4_amd64.deb ...
+Unpacking pkg-config (0.26-1ubuntu4) ...
+Selecting previously unselected package libidn11-dev.
+Preparing to unpack .../libidn11-dev_1.28-1ubuntu2_amd64.deb ...
+Unpacking libidn11-dev (1.28-1ubuntu2) ...
+Selecting previously unselected package libkrb5-dev.
+Preparing to unpack .../libkrb5-dev_1.12+dfsg-2ubuntu4_amd64.deb ...
+Unpacking libkrb5-dev (1.12+dfsg-2ubuntu4) ...
+Selecting previously unselected package libldap2-dev:amd64.
+Preparing to unpack .../libldap2-dev_2.4.31-1+nmu2ubuntu8_amd64.deb ...
+Unpacking libldap2-dev:amd64 (2.4.31-1+nmu2ubuntu8) ...
+Selecting previously unselected package libgpg-error-dev.
+Preparing to unpack .../libgpg-error-dev_1.12-0.2ubuntu1_amd64.deb ...
+Unpacking libgpg-error-dev (1.12-0.2ubuntu1) ...
+Selecting previously unselected package libgcrypt11-dev.
+Preparing to unpack .../libgcrypt11-dev_1.5.3-2ubuntu4_amd64.deb ...
+Unpacking libgcrypt11-dev (1.5.3-2ubuntu4) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libtasn1-6-dev.
+Preparing to unpack .../libtasn1-6-dev_3.4-3_amd64.deb ...
+Unpacking libtasn1-6-dev (3.4-3) ...
+Selecting previously unselected package libp11-kit-dev.
+Preparing to unpack .../libp11-kit-dev_0.20.2-2ubuntu2_amd64.deb ...
+Unpacking libp11-kit-dev (0.20.2-2ubuntu2) ...
+Selecting previously unselected package libgnutls-dev.
+Preparing to unpack .../libgnutls-dev_2.12.23-12ubuntu2_amd64.deb ...
+Unpacking libgnutls-dev (2.12.23-12ubuntu2) ...
+Selecting previously unselected package librtmp-dev.
+Preparing to unpack .../librtmp-dev_2.4+20121230.gitdf6c518-1_amd64.deb ...
+Unpacking librtmp-dev (2.4+20121230.gitdf6c518-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.1_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.1) ...
+Selecting previously unselected package libcurl4-openssl-dev:amd64.
+Preparing to unpack .../libcurl4-openssl-dev_7.35.0-1ubuntu2_amd64.deb ...
+Unpacking libcurl4-openssl-dev:amd64 (7.35.0-1ubuntu2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../libfile-fcntllock-perl_0.14-2build1_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.14-2build1) ...
+Selecting previously unselected package libsepol1-dev.
+Preparing to unpack .../libsepol1-dev_2.2-1_amd64.deb ...
+Unpacking libsepol1-dev (2.2-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libselinux1-dev:amd64.
+Preparing to unpack .../libselinux1-dev_2.2.2-1ubuntu0.1_amd64.deb ...
+Unpacking libselinux1-dev:amd64 (2.2.2-1ubuntu0.1) ...
+Selecting previously unselected package libfuse-dev.
+Preparing to unpack .../libfuse-dev_2.9.2-4ubuntu4_amd64.deb ...
+Unpacking libfuse-dev (2.9.2-4ubuntu4) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.1_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.1) ...
+Selecting previously unselected package libxml2-dev:amd64.
+Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3ubuntu4.1_amd64.deb ...
+Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_3.54-1ubuntu1_all.deb ...
+Unpacking manpages-dev (3.54-1ubuntu1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+Processing triggers for install-info (5.2.0.dfsg.1-2) ...
+Setting up libssl1.0.0:amd64 (1.0.1f-1ubuntu2.1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Setting up libasan0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libatomic1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up libisl10:amd64 (0.12.2-1) ...
+Setting up libcloog-isl4:amd64 (0.18.2-1) ...
+Setting up libgomp1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgssrpc4:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libitm1:amd64 (4.8.2-19ubuntu1) ...
+Setting up libkadm5clnt-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libkdb5-7:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libkadm5srv-mit9:amd64 (1.12+dfsg-2ubuntu4) ...
+Setting up libmpfr4:amd64 (3.1.2-1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libquadmath0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libtsan0:amd64 (4.8.2-19ubuntu1) ...
+Setting up libgnutlsxx27:amd64 (2.12.23-12ubuntu2) ...
+Setting up libmpc3:amd64 (1.0.1-1ubuntu1) ...
+Setting up binutils (2.24-5ubuntu3) ...
+Setting up libc-dev-bin (2.19-0ubuntu6) ...
+Setting up linux-libc-dev:amd64 (3.13.0-27.50) ...
+Setting up libc6-dev:amd64 (2.19-0ubuntu6) ...
+Setting up cpp-4.8 (4.8.2-19ubuntu1) ...
+Setting up cpp (4:4.8.2-1ubuntu6) ...
+Setting up libgcc-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Setting up gcc-4.8 (4.8.2-19ubuntu1) ...
+Setting up gcc (4:4.8.2-1ubuntu6) ...
+Setting up libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+Setting up g++-4.8 (4.8.2-19ubuntu1) ...
+Setting up g++ (4:4.8.2-1ubuntu6) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up make (3.81-8.2ubuntu3) ...
+Setting up libdpkg-perl (1.17.5ubuntu5.2) ...
+Setting up dpkg-dev (1.17.5ubuntu5.2) ...
+Setting up build-essential (11.6ubuntu6) ...
+Setting up exfat-fuse (1.0.1-1) ...
+Setting up exfat-utils (1.0.1-1) ...
+Setting up libfakeroot:amd64 (1.20-3ubuntu2) ...
+Setting up fakeroot (1.20-3ubuntu2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up comerr-dev (2.1-1.42.9-3ubuntu1) ...
+Setting up krb5-multidev (1.12+dfsg-2ubuntu4) ...
+Setting up libalgorithm-diff-perl (1.19.02-3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-2build4) ...
+Setting up libalgorithm-merge-perl (0.08-2) ...
+Setting up pkg-config (0.26-1ubuntu4) ...
+Setting up libidn11-dev (1.28-1ubuntu2) ...
+Setting up libkrb5-dev (1.12+dfsg-2ubuntu4) ...
+Setting up libldap2-dev:amd64 (2.4.31-1+nmu2ubuntu8) ...
+Setting up libgpg-error-dev (1.12-0.2ubuntu1) ...
+Setting up libgcrypt11-dev (1.5.3-2ubuntu4) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libtasn1-6-dev (3.4-3) ...
+Setting up libp11-kit-dev (0.20.2-2ubuntu2) ...
+Setting up libgnutls-dev (2.12.23-12ubuntu2) ...
+Setting up librtmp-dev (2.4+20121230.gitdf6c518-1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.1) ...
+Setting up libcurl4-openssl-dev:amd64 (7.35.0-1ubuntu2) ...
+Setting up libfile-fcntllock-perl (0.14-2build1) ...
+Setting up libsepol1-dev (2.2-1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libselinux1-dev:amd64 (2.2.2-1ubuntu0.1) ...
+Setting up libfuse-dev (2.9.2-4ubuntu4) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.1) ...
+Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.1) ...
+Setting up manpages-dev (3.54-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package fuse-utils is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+fuse-2.8.6/
+fuse-2.8.6/configure.in
+fuse-2.8.6/m4/
+fuse-2.8.6/m4/libtool.m4
+fuse-2.8.6/m4/lt~obsolete.m4
+fuse-2.8.6/m4/ltoptions.m4
+fuse-2.8.6/m4/ltsugar.m4
+fuse-2.8.6/m4/ltversion.m4
+fuse-2.8.6/INSTALL
+fuse-2.8.6/COPYING
+fuse-2.8.6/NEWS
+fuse-2.8.6/doc/
+fuse-2.8.6/doc/Doxyfile
+fuse-2.8.6/doc/how-fuse-works
+fuse-2.8.6/doc/kernel.txt
+fuse-2.8.6/depcomp
+fuse-2.8.6/ChangeLog
+fuse-2.8.6/fuse.pc.in
+fuse-2.8.6/COPYING.LIB
+fuse-2.8.6/configure
+fuse-2.8.6/aclocal.m4
+fuse-2.8.6/AUTHORS
+fuse-2.8.6/ltmain.sh
+fuse-2.8.6/FAQ
+fuse-2.8.6/example/
+fuse-2.8.6/example/hello.c
+fuse-2.8.6/example/fusexmp.c
+fuse-2.8.6/example/fioc.h
+fuse-2.8.6/example/fioclient.c
+fuse-2.8.6/example/hello_ll.c
+fuse-2.8.6/example/fioc.c
+fuse-2.8.6/example/fusexmp_fh.c
+fuse-2.8.6/example/cusexmp.c
+fuse-2.8.6/example/Makefile.am
+fuse-2.8.6/example/fsel.c
+fuse-2.8.6/example/Makefile.in
+fuse-2.8.6/example/null.c
+fuse-2.8.6/example/fselclient.c
+fuse-2.8.6/missing
+fuse-2.8.6/Makefile.am
+fuse-2.8.6/Filesystems
+fuse-2.8.6/compile
+fuse-2.8.6/config.rpath
+fuse-2.8.6/install-sh
+fuse-2.8.6/include/
+fuse-2.8.6/include/old/
+fuse-2.8.6/include/old/fuse.h
+fuse-2.8.6/include/config.h.in
+fuse-2.8.6/include/fuse_opt.h
+fuse-2.8.6/include/fuse_lowlevel.h
+fuse-2.8.6/include/ulockmgr.h
+fuse-2.8.6/include/cuse_lowlevel.h
+fuse-2.8.6/include/fuse.h
+fuse-2.8.6/include/fuse_common.h
+fuse-2.8.6/include/Makefile.am
+fuse-2.8.6/include/fuse_lowlevel_compat.h
+fuse-2.8.6/include/Makefile.in
+fuse-2.8.6/include/fuse_common_compat.h
+fuse-2.8.6/include/fuse_compat.h
+fuse-2.8.6/include/fuse_kernel.h
+fuse-2.8.6/lib/
+fuse-2.8.6/lib/fuse_session.c
+fuse-2.8.6/lib/fuse_loop.c
+fuse-2.8.6/lib/fuse.c
+fuse-2.8.6/lib/mount_util.h
+fuse-2.8.6/lib/helper.c
+fuse-2.8.6/lib/mount_util.c
+fuse-2.8.6/lib/fuse_loop_mt.c
+fuse-2.8.6/lib/ulockmgr.c
+fuse-2.8.6/lib/fuse_i.h
+fuse-2.8.6/lib/fuse_kern_chan.c
+fuse-2.8.6/lib/fuse_opt.c
+fuse-2.8.6/lib/mount.c
+fuse-2.8.6/lib/modules/
+fuse-2.8.6/lib/modules/iconv.c
+fuse-2.8.6/lib/modules/subdir.c
+fuse-2.8.6/lib/fuse_misc.h
+fuse-2.8.6/lib/fuse_lowlevel.c
+fuse-2.8.6/lib/fuse_versionscript
+fuse-2.8.6/lib/Makefile.am
+fuse-2.8.6/lib/fuse_signals.c
+fuse-2.8.6/lib/cuse_lowlevel.c
+fuse-2.8.6/lib/fuse_mt.c
+fuse-2.8.6/lib/Makefile.in
+fuse-2.8.6/lib/mount_bsd.c
+fuse-2.8.6/config.sub
+fuse-2.8.6/util/
+fuse-2.8.6/util/fusermount.c
+fuse-2.8.6/util/mount.fuse.c
+fuse-2.8.6/util/udev.rules
+fuse-2.8.6/util/ulockmgr_server.c
+fuse-2.8.6/util/Makefile.am
+fuse-2.8.6/util/init_script
+fuse-2.8.6/util/Makefile.in
+fuse-2.8.6/Makefile.in
+fuse-2.8.6/config.guess
+fuse-2.8.6/README
+fuse-2.8.6/README.NFS
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking whether gcc and cc understand -c and -o together... yes
+checking for fork... yes
+checking for setxattr... yes
+checking for fdatasync... yes
+checking for struct stat.st_atim... yes
+checking for struct stat.st_atimespec... no
+checking for library containing dlopen... -ldl
+checking for library containing clock_gettime... none required
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+configure: creating ./config.status
+config.status: creating fuse.pc
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating util/Makefile
+config.status: creating example/Makefile
+config.status: creating include/Makefile
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making all in include
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make  all-am
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+Making all in lib
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c -o fuse.lo fuse.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c fuse.c  -fPIC -DPIC -o .libs/fuse.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse.lo -MD -MP -MF .deps/fuse.Tpo -c fuse.c -o fuse.o >/dev/null 2>&1
+mv -f .deps/fuse.Tpo .deps/fuse.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c -o fuse_kern_chan.lo fuse_kern_chan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c fuse_kern_chan.c  -fPIC -DPIC -o .libs/fuse_kern_chan.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_kern_chan.lo -MD -MP -MF .deps/fuse_kern_chan.Tpo -c fuse_kern_chan.c -o fuse_kern_chan.o >/dev/null 2>&1
+mv -f .deps/fuse_kern_chan.Tpo .deps/fuse_kern_chan.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c -o fuse_loop.lo fuse_loop.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c fuse_loop.c  -fPIC -DPIC -o .libs/fuse_loop.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop.lo -MD -MP -MF .deps/fuse_loop.Tpo -c fuse_loop.c -o fuse_loop.o >/dev/null 2>&1
+mv -f .deps/fuse_loop.Tpo .deps/fuse_loop.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c -o fuse_loop_mt.lo fuse_loop_mt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c fuse_loop_mt.c  -fPIC -DPIC -o .libs/fuse_loop_mt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_loop_mt.lo -MD -MP -MF .deps/fuse_loop_mt.Tpo -c fuse_loop_mt.c -o fuse_loop_mt.o >/dev/null 2>&1
+mv -f .deps/fuse_loop_mt.Tpo .deps/fuse_loop_mt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c -o fuse_lowlevel.lo fuse_lowlevel.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c fuse_lowlevel.c  -fPIC -DPIC -o .libs/fuse_lowlevel.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_lowlevel.lo -MD -MP -MF .deps/fuse_lowlevel.Tpo -c fuse_lowlevel.c -o fuse_lowlevel.o >/dev/null 2>&1
+mv -f .deps/fuse_lowlevel.Tpo .deps/fuse_lowlevel.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c -o fuse_mt.lo fuse_mt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c fuse_mt.c  -fPIC -DPIC -o .libs/fuse_mt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_mt.lo -MD -MP -MF .deps/fuse_mt.Tpo -c fuse_mt.c -o fuse_mt.o >/dev/null 2>&1
+mv -f .deps/fuse_mt.Tpo .deps/fuse_mt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c -o fuse_opt.lo fuse_opt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c fuse_opt.c  -fPIC -DPIC -o .libs/fuse_opt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_opt.lo -MD -MP -MF .deps/fuse_opt.Tpo -c fuse_opt.c -o fuse_opt.o >/dev/null 2>&1
+mv -f .deps/fuse_opt.Tpo .deps/fuse_opt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c -o fuse_session.lo fuse_session.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c fuse_session.c  -fPIC -DPIC -o .libs/fuse_session.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_session.lo -MD -MP -MF .deps/fuse_session.Tpo -c fuse_session.c -o fuse_session.o >/dev/null 2>&1
+mv -f .deps/fuse_session.Tpo .deps/fuse_session.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c -o fuse_signals.lo fuse_signals.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c fuse_signals.c  -fPIC -DPIC -o .libs/fuse_signals.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fuse_signals.lo -MD -MP -MF .deps/fuse_signals.Tpo -c fuse_signals.c -o fuse_signals.o >/dev/null 2>&1
+mv -f .deps/fuse_signals.Tpo .deps/fuse_signals.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c -o cuse_lowlevel.lo cuse_lowlevel.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c cuse_lowlevel.c  -fPIC -DPIC -o .libs/cuse_lowlevel.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT cuse_lowlevel.lo -MD -MP -MF .deps/cuse_lowlevel.Tpo -c cuse_lowlevel.c -o cuse_lowlevel.o >/dev/null 2>&1
+mv -f .deps/cuse_lowlevel.Tpo .deps/cuse_lowlevel.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c -o helper.lo helper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c helper.c  -fPIC -DPIC -o .libs/helper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT helper.lo -MD -MP -MF .deps/helper.Tpo -c helper.c -o helper.o >/dev/null 2>&1
+mv -f .deps/helper.Tpo .deps/helper.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c -o subdir.lo `test -f 'modules/subdir.c' || echo './'`modules/subdir.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c modules/subdir.c  -fPIC -DPIC -o .libs/subdir.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT subdir.lo -MD -MP -MF .deps/subdir.Tpo -c modules/subdir.c -o subdir.o >/dev/null 2>&1
+mv -f .deps/subdir.Tpo .deps/subdir.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c -o iconv.lo `test -f 'modules/iconv.c' || echo './'`modules/iconv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c modules/iconv.c  -fPIC -DPIC -o .libs/iconv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT iconv.lo -MD -MP -MF .deps/iconv.Tpo -c modules/iconv.c -o iconv.o >/dev/null 2>&1
+mv -f .deps/iconv.Tpo .deps/iconv.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c -o mount.lo mount.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c mount.c  -fPIC -DPIC -o .libs/mount.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount.lo -MD -MP -MF .deps/mount.Tpo -c mount.c -o mount.o >/dev/null 2>&1
+mv -f .deps/mount.Tpo .deps/mount.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c -o mount_util.lo mount_util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c mount_util.c  -fPIC -DPIC -o .libs/mount_util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT mount_util.lo -MD -MP -MF .deps/mount_util.Tpo -c mount_util.c -o mount_util.o >/dev/null 2>&1
+mv -f .deps/mount_util.Tpo .deps/mount_util.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -pthread -ldl   -version-number 2:8:6 -Wl,--version-script,./fuse_versionscript  -o libfuse.la -rpath /usr/lib fuse.lo fuse_kern_chan.lo fuse_loop.lo fuse_loop_mt.lo fuse_lowlevel.lo fuse_mt.lo fuse_opt.lo fuse_session.lo fuse_signals.lo cuse_lowlevel.lo helper.lo subdir.lo iconv.lo mount.lo mount_util.lo  
+libtool: link: gcc -shared  .libs/fuse.o .libs/fuse_kern_chan.o .libs/fuse_loop.o .libs/fuse_loop_mt.o .libs/fuse_lowlevel.o .libs/fuse_mt.o .libs/fuse_opt.o .libs/fuse_session.o .libs/fuse_signals.o .libs/cuse_lowlevel.o .libs/helper.o .libs/subdir.o .libs/iconv.o .libs/mount.o .libs/mount_util.o   -ldl  -pthread -Wl,--version-script -Wl,./fuse_versionscript   -pthread -Wl,-soname -Wl,libfuse.so.2 -o .libs/libfuse.so.2.8.6
+libtool: link: (cd ".libs" && rm -f "libfuse.so.2" && ln -s "libfuse.so.2.8.6" "libfuse.so.2")
+libtool: link: (cd ".libs" && rm -f "libfuse.so" && ln -s "libfuse.so.2.8.6" "libfuse.so")
+libtool: link: ar cru .libs/libfuse.a  fuse.o fuse_kern_chan.o fuse_loop.o fuse_loop_mt.o fuse_lowlevel.o fuse_mt.o fuse_opt.o fuse_session.o fuse_signals.o cuse_lowlevel.o helper.o subdir.o iconv.o mount.o mount_util.o
+libtool: link: ranlib .libs/libfuse.a
+libtool: link: ( cd ".libs" && rm -f "libfuse.la" && ln -s "../libfuse.la" "libfuse.la" )
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c -o ulockmgr.lo ulockmgr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c ulockmgr.c  -fPIC -DPIC -o .libs/ulockmgr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -DFUSERMOUNT_DIR=\"/usr/bin\" -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DFUSE_USE_VERSION=26 -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT ulockmgr.lo -MD -MP -MF .deps/ulockmgr.Tpo -c ulockmgr.c -o ulockmgr.o >/dev/null 2>&1
+mv -f .deps/ulockmgr.Tpo .deps/ulockmgr.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -pthread -version-number 1:0:1  -o libulockmgr.la -rpath /usr/lib ulockmgr.lo  
+libtool: link: gcc -shared  .libs/ulockmgr.o    -pthread   -pthread -Wl,-soname -Wl,libulockmgr.so.1 -o .libs/libulockmgr.so.1.0.1
+libtool: link: (cd ".libs" && rm -f "libulockmgr.so.1" && ln -s "libulockmgr.so.1.0.1" "libulockmgr.so.1")
+libtool: link: (cd ".libs" && rm -f "libulockmgr.so" && ln -s "libulockmgr.so.1.0.1" "libulockmgr.so")
+libtool: link: ar cru .libs/libulockmgr.a  ulockmgr.o
+libtool: link: ranlib .libs/libulockmgr.a
+libtool: link: ( cd ".libs" && rm -f "libulockmgr.la" && ln -s "../libulockmgr.la" "libulockmgr.la" )
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+Making all in util
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../lib   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fusermount-fusermount.o -MD -MP -MF .deps/fusermount-fusermount.Tpo -c -o fusermount-fusermount.o `test -f 'fusermount.c' || echo './'`fusermount.c
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+Making install in include
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/fuse" || /bin/mkdir -p "/usr/include/fuse"
+ /usr/bin/install -c -m 644 fuse.h fuse_compat.h fuse_common.h fuse_common_compat.h fuse_lowlevel.h fuse_lowlevel_compat.h fuse_opt.h cuse_lowlevel.h '/usr/include/fuse'
+test -z "/usr/include" || /bin/mkdir -p "/usr/include"
+ /usr/bin/install -c -m 644 old/fuse.h ulockmgr.h '/usr/include'
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/include'
+Making install in lib
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+make[2]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+test -z "/usr/lib" || /bin/mkdir -p "/usr/lib"
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libfuse.la libulockmgr.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfuse.so.2.8.6 /usr/lib/libfuse.so.2.8.6
+libtool: install: (cd /usr/lib && { ln -s -f libfuse.so.2.8.6 libfuse.so.2 || { rm -f libfuse.so.2 && ln -s libfuse.so.2.8.6 libfuse.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfuse.so.2.8.6 libfuse.so || { rm -f libfuse.so && ln -s libfuse.so.2.8.6 libfuse.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfuse.lai /usr/lib/libfuse.la
+libtool: install: /usr/bin/install -c .libs/libulockmgr.so.1.0.1 /usr/lib/libulockmgr.so.1.0.1
+libtool: install: (cd /usr/lib && { ln -s -f libulockmgr.so.1.0.1 libulockmgr.so.1 || { rm -f libulockmgr.so.1 && ln -s libulockmgr.so.1.0.1 libulockmgr.so.1; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libulockmgr.so.1.0.1 libulockmgr.so || { rm -f libulockmgr.so && ln -s libulockmgr.so.1.0.1 libulockmgr.so; }; })
+libtool: install: /usr/bin/install -c .libs/libulockmgr.lai /usr/lib/libulockmgr.la
+libtool: install: /usr/bin/install -c .libs/libfuse.a /usr/lib/libfuse.a
+libtool: install: chmod 644 /usr/lib/libfuse.a
+libtool: install: ranlib /usr/lib/libfuse.a
+libtool: install: /usr/bin/install -c .libs/libulockmgr.a /usr/lib/libulockmgr.a
+libtool: install: chmod 644 /usr/lib/libulockmgr.a
+libtool: install: ranlib /usr/lib/libulockmgr.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/lib'
+Making install in util
+make[1]: Entering directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../lib   -Wall -W -Wno-sign-compare -Wstrict-prototypes -Wmissing-declarations -Wwrite-strings -g -O2 -fno-strict-aliasing -MT fusermount-fusermount.o -MD -MP -MF .deps/fusermount-fusermount.Tpo -c -o fusermount-fusermount.o `test -f 'fusermount.c' || echo './'`fusermount.c
+make[1]: Leaving directory `/home/ubuntu/downloads/fuse-2.8.6/util'
+s3fs-1.74/
+s3fs-1.74/COPYING
+s3fs-1.74/configure.ac
+s3fs-1.74/doc/
+s3fs-1.74/doc/Makefile.am
+s3fs-1.74/doc/Makefile.in
+s3fs-1.74/doc/man/
+s3fs-1.74/doc/man/s3fs.1
+s3fs-1.74/config.guess
+s3fs-1.74/INSTALL
+s3fs-1.74/NEWS
+s3fs-1.74/install-sh
+s3fs-1.74/Makefile.am
+s3fs-1.74/ChangeLog
+s3fs-1.74/test/
+s3fs-1.74/test/Makefile.am
+s3fs-1.74/test/sample_ahbe.conf
+s3fs-1.74/test/mergedir.sh
+s3fs-1.74/test/Makefile.in
+s3fs-1.74/test/require-root.sh
+s3fs-1.74/test/integration-test-common.sh
+s3fs-1.74/test/small-integration-test.sh
+s3fs-1.74/test/sample_delcache.sh
+s3fs-1.74/Makefile.in
+s3fs-1.74/config.sub
+s3fs-1.74/README
+s3fs-1.74/src/
+s3fs-1.74/src/s3fs_util.h
+s3fs-1.74/src/cache.h
+s3fs-1.74/src/string_util.cpp
+s3fs-1.74/src/Makefile.am
+s3fs-1.74/src/s3fs.h
+s3fs-1.74/src/fdcache.cpp
+s3fs-1.74/src/curl.cpp
+s3fs-1.74/src/common.h
+s3fs-1.74/src/Makefile.in
+s3fs-1.74/src/string_util.h
+s3fs-1.74/src/fdcache.h
+s3fs-1.74/src/cache.cpp
+s3fs-1.74/src/s3fs.cpp
+s3fs-1.74/src/s3fs_util.cpp
+s3fs-1.74/src/curl.h
+s3fs-1.74/depcomp
+s3fs-1.74/AUTHORS
+s3fs-1.74/aclocal.m4
+s3fs-1.74/missing
+s3fs-1.74/configure
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for DEPS... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for malloc_trim... yes
+checking Initializing libcurl build with NSS... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating doc/Makefile
+config.status: executing depfiles commands
+Making all in src
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT s3fs.o -MD -MP -MF .deps/s3fs.Tpo -c -o s3fs.o s3fs.cpp
+mv -f .deps/s3fs.Tpo .deps/s3fs.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT curl.o -MD -MP -MF .deps/curl.Tpo -c -o curl.o curl.cpp
+mv -f .deps/curl.Tpo .deps/curl.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT cache.o -MD -MP -MF .deps/cache.Tpo -c -o cache.o cache.cpp
+mv -f .deps/cache.Tpo .deps/cache.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT string_util.o -MD -MP -MF .deps/string_util.Tpo -c -o string_util.o string_util.cpp
+mv -f .deps/string_util.Tpo .deps/string_util.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT s3fs_util.o -MD -MP -MF .deps/s3fs_util.Tpo -c -o s3fs_util.o s3fs_util.cpp
+mv -f .deps/s3fs_util.Tpo .deps/s3fs_util.Po
+g++ -DPACKAGE_NAME=\"s3fs\" -DPACKAGE_TARNAME=\"s3fs\" -DPACKAGE_VERSION=\"1.74\" -DPACKAGE_STRING=\"s3fs\ 1.74\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"s3fs\" -DVERSION=\"1.74\" -DHAVE_MALLOC_TRIM=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I.  -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse -I/usr/include/libxml2     -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT fdcache.o -MD -MP -MF .deps/fdcache.Tpo -c -o fdcache.o fdcache.cpp
+mv -f .deps/fdcache.Tpo .deps/fdcache.Po
+g++  -g -O2 -Wall -D_FILE_OFFSET_BITS=64   -o s3fs s3fs.o curl.o cache.o string_util.o s3fs_util.o fdcache.o -pthread -lfuse -lcurl -lxml2 -lcrypto   
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+Making all in test
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+Making all in doc
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+Making install in src
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/src'
+test -z "/usr/bin" || /bin/mkdir -p "/usr/bin"
+  /usr/bin/install -c s3fs '/usr/bin'
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/src'
+Making install in test
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/test'
+Making install in doc
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/usr/share/man/man1"
+ /usr/bin/install -c -m 644 man/s3fs.1 '/usr/share/man/man1'
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74/doc'
+make[1]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[2]: Entering directory `/home/ubuntu/downloads/s3fs-1.74'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+make[1]: Leaving directory `/home/ubuntu/downloads/s3fs-1.74'
+Wed May 28 22:57:27 PDT 2014
+4.running s3_bucket.pl......
+Keys cleared for bucket : rashmireddy-awsutil-s3-01
+Wed May 28 22:57:28 PDT 2014
+5.running mount_s3fs.pl......
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-84-101.us-west-1.compute.amazonaws.com
+SUCCESS : /mnt/rashmireddy-awsutil-s3-01 mounted on host : ec2-54-183-70-242.us-west-1.compute.amazonaws.com
+Wed May 28 22:57:36 PDT 2014
+6.running s3fs_ops.pl.......
+Generating report, please wait...
+For host : ec2-54-183-70-242.us-west-1.compute.amazonaws.com
+For host : ec2-54-183-84-101.us-west-1.compute.amazonaws.com
