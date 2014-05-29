@@ -41,8 +41,8 @@ sub scp_dataops {
 		system("scp -q -o StrictHostKeyChecking=no $config_file ubuntu\@$host:");
 
 		# Run the IO operations perl script on the remote instance
-		system("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"rm io.log && ~/ops.pl >> ~/io.log\"");
-		system("scp -q -o StrictHostKeyChecking=no ubuntu\@$host:~/io.log $host.log")
+		system("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"rm -f io.log && ~/ops.pl >> ~/io.log\"");
+		system("scp -q -o StrictHostKeyChecking=no ubuntu\@$host:~/io.log report/$host.log")
 	}
 }
 
