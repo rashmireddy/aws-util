@@ -36,7 +36,7 @@ sub scp_s3fs_install_file {
 
 	while(my $host = <FH>) {
 		chomp $host;
-		#print ("$scp_command install_s3fs.sh ubuntu\@$host:");
+		
 		my $flag=system("$scp_command install_s3fs.sh ubuntu\@$host:");
 		if($flag !=0) {
 			print STDERR "ERROR : failed to scp install file to $host\n";
@@ -47,7 +47,7 @@ sub scp_s3fs_install_file {
 
 
 sub ssh_s3fs_run_install {
-	#print Dumper(\%hosts_scp_result);
+	
 	while ( my ($host, $value) = each(%hosts_scp_result) ) {
 		if($value == 0){
 			print("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"~/install_s3fs.sh\"");

@@ -15,7 +15,7 @@ if(-e $config_file) {
     # Open the config
         $config = Config::Tiny->read($config_file);
 }
-
+# get the no. of instances to be launched from the config file
 my $num_clients = $config->{'aws'}->{'instance_count'};
 
 my @instances = create_instance($num_clients);
@@ -29,7 +29,7 @@ if(scalar(@instances) > 0 ) {
 for my $i (@instances) {
     my $status = $i->current_status;
     my $dns    = $i->dnsName;
-    #system("ssh ec2-user\@$dns 'date'");
+
     print "$i: [$status] $dns\n";
     print FH "$dns\n";
 }
@@ -48,8 +48,6 @@ for my $i (@instances) {
     # We will use Ubuntu Server 14.04 LTS (PV) 64 bit image - ami-ee4f77ab
     my $image = $ec2->describe_images($config->{'aws'}->{'image'});
 
-    #print Dumper($image);
-    #print "Creating " . $num_clients . " instances of " . $image->name  . " ...\n";
     # run instances
     my @instances = $image->run_instances(
                                           -key_name       => $config->{'aws'}->{'key_name'},
@@ -64,10 +62,8 @@ for my $i (@instances) {
 
     # tag instances with Role "server"
     foreach my $instance (@instances) {
-        #print $instance->current_status."\n";
         $instance->add_tag(Role=>'server');
     }
 
     return(@instances);    
 }
-
