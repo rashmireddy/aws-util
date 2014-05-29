@@ -112,7 +112,6 @@ This script takes 1 param, a config file and generates report for io operations
 
 ```
 $ ./s3fs_ops.pl aws.conf
-Rashmi:aws-util rashmi$ ./s3fs_ops.pl config/aws.conf 
 Generating report, please wait...
 For host : ec2-54-183-65-181.us-west-1.compute.amazonaws.com
 For host : ec2-54-183-65-195.us-west-1.compute.amazonaws.com
