@@ -43,7 +43,7 @@ for my $i (@instances) {
                             -raise_error => "true",
                             -print_error => "true",
                             -region => $config->{'aws'}->{'region'});
-    print Dumper($ec2);
+    
     # fetch an image by its ID 
     # We will use Ubuntu Server 14.04 LTS (PV) 64 bit image - ami-ee4f77ab
     my $image = $ec2->describe_images($config->{'aws'}->{'image'});

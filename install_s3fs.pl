@@ -50,7 +50,7 @@ sub ssh_s3fs_run_install {
 	
 	while ( my ($host, $value) = each(%hosts_scp_result) ) {
 		if($value == 0){
-			print("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"~/install_s3fs.sh\"");
+			#print("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"~/install_s3fs.sh\"");
 			my $flag = system("ssh -o StrictHostKeyChecking=no ubuntu\@$host \"~/install_s3fs.sh\"");
 			if($flag !=0) {
 				print STDERR "ERROR : failed to install s3fs on $host\n";
