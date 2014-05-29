@@ -1,7 +1,7 @@
 aws-util
 ========
 
-Perl interface to Amazon EC2 & S3 Environment
+Perl interface to launch Amazon EC2 instances, mount S3fs on each instance and generate reports. 
 
 Requirements on Mac OSX
 =======================
@@ -49,6 +49,8 @@ files=data/4kb.txt,data/4kb.bin
 ops=ops.pl
 ```
 
+
+
 run.sh
 ======
 This is a driver script to run all individual scripts, It takes 1 param, a config file
@@ -73,7 +75,7 @@ $
 
 install_s3fs.pl
 ================
-This script takes 1 param, a aws.conf file which tells the name of the text file with list of hostnames on which s3fs should be installed. The script will scp install_s3fs.sh file to the remote host which does the installation.
+This script takes 1 param, aws.conf file which tells the name of the text file with list of hostnames on which s3fs should be installed. The script will scp install_s3fs.sh file to the remote host which does the installation.
 
 ```
 $ ./install_s3fs.pl aws.conf
