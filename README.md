@@ -1,7 +1,7 @@
 aws-util
 ========
 
-Perl interface to Amazon EC2 Environment
+Perl interface to Amazon EC2 & S3 Environment
 
 Requirements on Mac OSX
 =======================
