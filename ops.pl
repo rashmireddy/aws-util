@@ -19,6 +19,7 @@ sub delete_file {
 			my $one=gettimeofday();
 			system("rm /mnt/rashmireddy-awsutil-s3-01/$dfile.$i");
 			my $two=gettimeofday();
+			# convert ms to micro second
 			my $timediff = ($two-$one) * 1000 ;
 			print "DELETE\t$dfile.$i\t$timediff\n";
 		}
@@ -31,6 +32,7 @@ sub read_file {
 			my $one=gettimeofday();
 			system("cp /mnt/rashmireddy-awsutil-s3-01/$dfile.$i /tmp/$dfile");
 			my $two=gettimeofday();
+			# convert ms to micro second
 			my $timediff = ($two-$one) * 1000;
 			print "READ\t$dfile.$i\t$timediff\n";
 		}
@@ -43,6 +45,7 @@ sub write_file {
 			my $one=gettimeofday();
 			system("cp ~/$dfile /mnt/rashmireddy-awsutil-s3-01/$dfile.$i");
 			my $two=gettimeofday();
+			# convert ms to micro second
 			my $timediff = ($two-$one) * 1000;
 			print "WRITE\t$dfile.$i\t$timediff\n";
 		}

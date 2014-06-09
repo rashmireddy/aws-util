@@ -51,7 +51,13 @@ sub mount_s3fs  {
 		}
 		
 		system("$scp_command .passwd-s3fs ubuntu\@$host:");
-
+		#s3fs mount issues, removing actual mount command
+		my $flag = system ("$ssh_command ubuntu\@$host \"sudo mkdir -p /mnt/$bucket_name && \
+								sudo chown ubuntu:ubuntu /mnt/$bucket_name && \
+								mkdir -p ~/cache && \
+								sudo chmod -R 777 /mnt/$bucket_name
+								\"");
+=comment
 		my $flag = system ("$ssh_command ubuntu\@$host \"sudo mkdir -p /mnt/$bucket_name && \
 								sudo chown ubuntu:ubuntu /mnt/$bucket_name && \
 								mkdir -p ~/cache && \
@@ -59,7 +65,7 @@ sub mount_s3fs  {
 								sudo s3fs -o uid=1000,gid=1000,use_cache=/home/ubuntu/cache $bucket_name /mnt/$bucket_name && \
 								mount
 								\"");
-
+=cut
 		$mount_s3fs_result{$host} = $flag;
 	}
 }

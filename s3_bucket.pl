@@ -21,11 +21,14 @@ my $s3 = Amazon::S3->new( {
           aws_secret_access_key => $config->{'aws'}->{'secret_key'}
       });
 
+# get the bucket name from the config
 my $bucket_name = $config->{'s3'}->{'bucket_name'};
 
-my $response = $s3->buckets;
+# get all bucket names from S3 object
+my $response = $s3->buckets();
 my @active_buckets = @{$response->{'buckets'}};
 
+# iterate for all active buckets
 foreach my $bucket_info (@active_buckets) {
   if($bucket_info->{'bucket'} eq $bucket_name) {
    # get the keys from bucket 
